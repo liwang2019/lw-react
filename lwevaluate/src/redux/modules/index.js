@@ -8,7 +8,6 @@ import login from "./login"
 import user from "./user";
 import purchase from "./purchase";
 
-//合并成根reducer
 const rootReducer = combineReducers({
   entities,
   home,

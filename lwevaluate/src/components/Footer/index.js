@@ -2,62 +2,62 @@ import React, { Component } from 'react'
 import './style.css'
 
 class Footer extends Component {
-  render () {
+  render() {
     return (
       <footer className='footer'>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          我的
+          My
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          社区论坛
+          Forum
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          添加商户
+          Add shop
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          意见反馈
+          Feedback
         </a>
-        <br/>
+        <br />
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          美团网
+          Yelp
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          美团下载
+          Download
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          结婚
+          Marriage
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          亲子
+          Baby
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          家装
+          Clothes
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          宴会
+          Restaurant
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          教育
+          Education
         </a>
-        <br/>
+        <br />
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          电脑版
+          PC
         </a>
         <em className="footer__seperator">|</em>
         <a className='footer__link' href="https://m.dianping.com/nmy/myinfo">
-          客户端
+          Phone
         </a>
         <em className="footer__seperator">|</em>
-        <br/>
+        <br />
         <p className="footer__copyright">copyright ©2018 dianping.com</p>
       </footer>
     )

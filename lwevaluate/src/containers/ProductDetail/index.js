@@ -19,7 +19,7 @@ class ProductDetail extends Component {
     const { product, relatedShop } = this.props;
     return (
       <div>
-        <Header title="团购详情" onBack={this.handleBack} grey />
+        <Header title="Detail" onBack={this.handleBack} grey />
         {product && <ProductOverview data={product} />}
         {relatedShop && (
           <ShopInfo data={relatedShop} total={product.shopIds.length} />
@@ -46,7 +46,6 @@ class ProductDetail extends Component {
   }
 
   componentDidUpdate(preProps) {
-    // 第一次获取到产品详情时，需要继续获取关联的店铺信息
     if (!preProps.product && this.props.product) {
       this.props.detailActions.loadShopById(this.props.product.nearestShop);
     }

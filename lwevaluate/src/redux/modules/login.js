@@ -2,7 +2,7 @@ const initialState = {
   username: localStorage.getItem('username') || '',
   password: "",
   isFetching: false,
-  status: localStorage.getItem('login') || false //登录态标识
+  status: localStorage.getItem('login') || false
 };
 
 // action types
@@ -17,14 +17,13 @@ export const types = {
 
 // action creators
 export const actions = {
-  // 异步action, 执行登录
   login: () => {
     return (dispatch, getState) => {
       const { username, password } = getState().login;
       if (
         !(username && username.length > 0 && password && password.length > 0)
       ) {
-        return dispatch(loginFailure("用户名和秘密不能为空！"));
+        return dispatch(loginFailure("User name and password cannot be empty!"));
       }
       dispatch(loginRequest());
       return new Promise((resolve, reject) => {

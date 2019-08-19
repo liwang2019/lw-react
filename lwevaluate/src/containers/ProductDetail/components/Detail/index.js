@@ -11,7 +11,7 @@ class Detail extends Component {
     return (
       <div className="detail">
         <div className="detail__header">
-          <span>团购详情</span>
+          <span>Detail</span>
           <i className="detail__headerIcon" />
         </div>
         <table cellPadding="0" cellSpacing="0" className="detail__table">
@@ -34,15 +34,15 @@ class Detail extends Component {
             <tr className="detail__row">
               <td />
               <td className="detail__td--price">
-                最高价值
+                Highest price
                 <br />
-                <strong className="detail__td--priceNew">团购价</strong>
+                <strong className="detail__td--priceNew">New Price</strong>
               </td>
               <td className="detail__td--price">
-                {oldPrice}元
+                {oldPrice} Yuan
                 <br />
                 <strong className="detail__td--priceNew">
-                  {currentPrice}元
+                  {currentPrice} Yuan
                 </strong>
               </td>
             </tr>
@@ -50,9 +50,9 @@ class Detail extends Component {
         </table>
         <div className="detail__remark">{remark}</div>
         <div className="detail__more">
-          <span>更多图文详情</span>
+          <span>More detail</span>
           <span className="detail__notice">
-            (建议Wifi环境下打卡，土豪请随意)
+            Suggest use WiFi
           </span>
           <i className="detail__arrow" />
         </div>

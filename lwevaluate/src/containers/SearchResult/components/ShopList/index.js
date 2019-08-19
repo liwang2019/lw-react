@@ -4,13 +4,13 @@ import "./style.css"
 
 class ShopList extends Component {
   render() {
-    const {data} = this.props;
+    const { data } = this.props;
     return (
       <div className="shopList">
         <div className="shopList__filter">
-          <span className="shopList__filterItem">全部商区</span>
-          <span className="shopList__filterItem">全部分类</span>
-          <span className="shopList__filterItem">智能排序</span>
+          <span className="shopList__filterItem">All districts</span>
+          <span className="shopList__filterItem">All categories</span>
+          <span className="shopList__filterItem">Sorting</span>
         </div>
         <div className="shopList__list">
           {data.map((item, index) => {

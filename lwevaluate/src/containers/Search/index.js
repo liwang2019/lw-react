@@ -23,19 +23,19 @@ class Search extends Component {
     return (
       <div>
         <SearchBox inputText={inputText} relatedKeywords={relatedKeywords}
-        onChange={this.handleChangeInput}
-        onClear={this.handleClearInput}
-        onCancel={this.handleCancel}
-        onClickItem={this.handleClickItem}
-        />
-        <PopularSearch 
-          data = {popularKeywords}
+          onChange={this.handleChangeInput}
+          onClear={this.handleClearInput}
+          onCancel={this.handleCancel}
           onClickItem={this.handleClickItem}
         />
-        <SearchHistory 
-          data = {historyKeywords}
-          onClickItem = {this.handleClickItem}
-          onClear = {this.handleClearHistory}
+        <PopularSearch
+          data={popularKeywords}
+          onClickItem={this.handleClickItem}
+        />
+        <SearchHistory
+          data={historyKeywords}
+          onClickItem={this.handleClickItem}
+          onClear={this.handleClearHistory}
         />
       </div>
     );
@@ -45,27 +45,23 @@ class Search extends Component {
     const { loadPopularKeywords } = this.props.searchActions
     loadPopularKeywords()
   }
-  
-  // 搜索框文本发生变化
+
   handleChangeInput = text => {
     const { setInputText, loadRelatedKeywords } = this.props.searchActions
     setInputText(text)
     loadRelatedKeywords(text)
   }
 
-  // 清除搜索框文本
   handleClearInput = () => {
     const { clearInputText } = this.props.searchActions
     clearInputText()
   }
 
-  // 取消搜索
   handleCancel = () => {
     this.handleClearInput();
     this.props.history.goBack();
   }
 
-  // 处理点击关键词的逻辑
   handleClickItem = item => {
     const { setInputText, addHistoryKeyword, loadRelatedShops } = this.props.searchActions
     setInputText(item.keyword)
@@ -74,7 +70,6 @@ class Search extends Component {
     this.props.history.push("/search_result")
   }
 
-  // 清除历史记录
   handleClearHistory = () => {
     const { clearHistoryKeywords } = this.props.searchActions;
     clearHistoryKeywords();

@@ -13,7 +13,7 @@ import OrderItem from "../../components/OrderItem";
 import Confirm from "../../../../components/Confirm";
 import "./style.css";
 
-const tabTitles = ["全部订单", "待付款", "可使用", "退款/售后"];
+const tabTitles = ["All orders", "Not paid", "Usable", "Refund"];
 
 class UserMain extends Component {
   render() {
@@ -76,29 +76,27 @@ class UserMain extends Component {
     return (
       <div className="userMain__empty">
         <div className="userMain__emptyIcon" />
-        <div className="userMain__emptyText1">您还没有相关订单</div>
-        <div className="userMain__emptyText2">去逛逛看有哪些想买的</div>
+        <div className="userMain__emptyText1">You don't have any order yet</div>
+        <div className="userMain__emptyText2">Check what you wan to buy</div>
       </div>
     );
   };
 
-  //删除对话框
   renderConfirmDialog = () => {
     const {
       userActions: { hideDeleteDialog, removeOrder }
     } = this.props;
     return (
       <Confirm
-        content="确定删除该订单吗？"
-        cancelText="取消"
-        confirmText="确定"
+        content="Are you sure you wan to delete this order?"
+        cancelText="Cancel"
+        confirmText="Confirm"
         onCancel={hideDeleteDialog}
         onConfirm={removeOrder}
       />
     );
   };
 
-  // 评价内容变化
   handleCommentChange = comment => {
     const {
       userActions: { setComment }
@@ -106,7 +104,6 @@ class UserMain extends Component {
     setComment(comment);
   };
 
-  // 订单评级变化
   handleStarsChange = stars => {
     const {
       userActions: { setStars }
@@ -114,7 +111,6 @@ class UserMain extends Component {
     setStars(stars);
   };
 
-  //选中当前要评价的订单
   handleComment = orderId => {
     const {
       userActions: { showCommentArea }
@@ -122,7 +118,6 @@ class UserMain extends Component {
     showCommentArea(orderId);
   };
 
-  //提交评价
   handleSubmitComment = () => {
     const {
       userActions: { submitComment }
@@ -130,7 +125,6 @@ class UserMain extends Component {
     submitComment();
   };
 
-  //取消评价
   handleCancelComment = () => {
     const {
       userActions: { hideCommentArea }

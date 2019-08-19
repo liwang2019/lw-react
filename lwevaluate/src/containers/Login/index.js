@@ -13,9 +13,9 @@ import { connect } from "react-redux";
 
 class Login extends Component {
   render() {
-    const { username, password, login, location: {state} } = this.props;
+    const { username, password, login, location: { state } } = this.props;
     if (login) {
-      if(state && state.from) {
+      if (state && state.from) {
         return <Redirect to={state.from} />
       }
       return <Redirect to="/user" />;
@@ -33,7 +33,6 @@ class Login extends Component {
     );
   }
 
-  // input元素改变的响应函数
   handleChange = e => {
     if (e.target.name === "username") {
       this.props.loginActions.setUsername(e.target.value);
@@ -42,7 +41,6 @@ class Login extends Component {
     }
   };
 
-  // 登录
   handleSubmit = () => {
     this.props.loginActions.login();
   };

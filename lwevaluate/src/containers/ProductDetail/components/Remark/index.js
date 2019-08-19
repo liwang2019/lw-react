@@ -7,12 +7,12 @@ class Remark extends Component {
     return (
       <div className="remark">
         <div className="remark__header">
-          购买须知
+          Notification
           <i className="remark__icon" />
         </div>
         <div className="remark__list">
           <dl className="remark__item">
-            <dt className="remark__itemTitle">有效期</dt>
+            <dt className="remark__itemTitle">Period of validity</dt>
             <dd className="remark__itemDesc">{validityPeriod}</dd>
           </dl>
           {purchaseNotes.map((item, index) => {

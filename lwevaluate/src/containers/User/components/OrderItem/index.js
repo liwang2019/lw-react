@@ -27,11 +27,11 @@ class OrderItem extends Component {
           <div>
             {type === 1 && !commentId ? (
               <div className="orderItem__btn" onClick={this.handleComment}>
-                评价
+                Comment
               </div>
             ) : null}
             <div className="orderItem__btn" onClick={this.handleRemove}>
-              删除
+              Delete
             </div>
           </div>
         </div>
@@ -40,7 +40,6 @@ class OrderItem extends Component {
     );
   }
 
-  //渲染订单评价区域的DOM
   renderEditArea() {
     return (
       <div className="orderItem__commentContainer">
@@ -54,13 +53,13 @@ class OrderItem extends Component {
           className="orderItem__commentBtn"
           onClick={this.props.onSubmitComment}
         >
-          提交
+          Submit
         </button>
         <button
           className="orderItem__commentBtn"
           onClick={this.props.onCancelComment}
         >
-          取消
+          Cancel
         </button>
       </div>
     );
@@ -86,7 +85,6 @@ class OrderItem extends Component {
     );
   }
 
-  //评价按钮点击事件
   handleComment = () => {
     const {
       data: { id }
@@ -94,12 +92,10 @@ class OrderItem extends Component {
     this.props.onComment(id);
   };
 
-  //评价信息发生变化
   handleCommentChange = e => {
     this.props.onCommentChange(e.target.value);
   };
 
-  //删除订单
   handleRemove = () => {
     this.props.onRemove();
   };

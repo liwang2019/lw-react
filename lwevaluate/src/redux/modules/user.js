@@ -21,11 +21,11 @@ const typeToKey = {
 const initialState = {
   orders: {
     isFetching: false,
-    fetched: false, //购买页面使用
+    fetched: false,
     ids: [],
-    toPayIds: [], //待付款的订单id
-    availableIds: [], //可使用的订单id
-    refundIds: [] //退款订单id
+    toPayIds: [],
+    availableIds: [],
+    refundIds: []
   },
   currentTab: 0,
   currentOrder: {
@@ -38,50 +38,39 @@ const initialState = {
 };
 
 export const types = {
-  //获取订单列表
   FETCH_ORDERS_REQUEST: "USER/FETCH_ORDERS_REQUEST",
   FETCH_ORDERS_SUCCESS: "USER/FETCH_ORDERS_SUCCESS",
   FETCH_ORDERS_FAILURE: "USER/FETCH_ORDERS_FAILURE",
-  //设置当选选中的tab
   SET_CURRENT_TAB: "USER/SET_CURRENT_TAB",
-  //删除订单
   DELETE_ORDER_REQUEST: "USER/DELETE_ORDER_REQUEST",
   DELETE_ORDER_SUCCESS: "USER/DELETE_ORDER_SUCCESS",
   DELETE_ORDER_FAILURE: "USER/DELETE_ORDER_FAILURE",
-  //删除确认对话框
   SHOW_DELETE_DIALOG: "USER/SHOW_DELETE_DIALOG",
   HIDE_DELETE_DIALOG: "USER/HIDE_DELETE_DIALOG",
-  //评价订单编辑
   SHOW_COMMENT_AREA: "USER/SHOW_COMMENT_AREA",
   HIDE_COMMENT_AREA: "USER/HIDE_COMMENT_AREA",
-  //编辑评价内容
   SET_COMMENT: "USER/SET_COMMENT",
-  //打分
   SET_STARS: "USER/SET_STARS",
-  //提交评价
   POST_COMMENT_REQUEST: "USER/POST_COMMENT_REQUEST",
   POST_COMMENT_SUCCESS: "USER/POST_COMMENT_SUCCESS",
   POST_COMMENT_FAILURE: "USER/POST_COMMENT_FAILURE"
 };
 
 export const actions = {
-  // 获取订单列表
   loadOrders: () => {
     return (dispatch, getState) => {
       const { ids, fetched } = getState().user.orders;
-      if(fetched) {
+      if (fetched) {
         return null
       }
       const endpoint = url.getOrders();
       return dispatch(fetchOrders(endpoint));
     };
   },
-  // 切换tab
   setCurrentTab: index => ({
     type: types.SET_CURRENT_TAB,
     index
   }),
-  //删除订单
   removeOrder: () => {
     return (dispatch, getState) => {
       const { id } = getState().user.currentOrder;
@@ -97,35 +86,28 @@ export const actions = {
       }
     };
   },
-  //显示删除对话框
   showDeleteDialog: orderId => ({
     type: types.SHOW_DELETE_DIALOG,
     orderId
   }),
-  //隐藏删除对话框
   hideDeleteDialog: () => ({
     type: types.HIDE_DELETE_DIALOG
   }),
-  //显示订单评价编辑框
   showCommentArea: orderId => ({
     type: types.SHOW_COMMENT_AREA,
     orderId
   }),
-  //显示订单评价编辑框
   hideCommentArea: () => ({
     type: types.HIDE_COMMENT_AREA
   }),
-  //设置评价信息
   setComment: comment => ({
     type: types.SET_COMMENT,
     comment
   }),
-  // 设置评级等级
   setStars: stars => ({
     type: types.SET_STARS,
     stars
   }),
-  // 提交评价
   submitComment: () => {
     return (dispatch, getState) => {
       dispatch(postCommentRequest());
@@ -216,14 +198,14 @@ const orders = (state = initialState.orders, action) => {
       const key = typeToKey[order.type];
       return key
         ? {
-            ...state,
-            ids: [order.id].concat(state.ids),
-            [key]: [order.id].concat(state[key])
-          }
+          ...state,
+          ids: [order.id].concat(state.ids),
+          [key]: [order.id].concat(state[key])
+        }
         : {
-            ...state,
-            ids: [order.id].concat(state.ids)
-          };
+          ...state,
+          ids: [order.id].concat(state.ids)
+        };
     default:
       return state;
   }
@@ -294,26 +276,22 @@ export const getOrders = state => {
   });
 };
 
-// 获取正在删除的订单id
 export const getDeletingOrderId = state => {
   return state.user.currentOrder && state.user.currentOrder.isDeleting
     ? state.user.currentOrder.id
     : null;
 };
 
-// 获取正在评价的订单id
 export const getCommentingOrderId = state => {
   return state.user.currentOrder && state.user.currentOrder.isCommenting
     ? state.user.currentOrder.id
     : null;
 };
 
-// 获取评论信息
 export const getCurrentOrderComment = state => {
   return state.user.currentOrder ? state.user.currentOrder.comment : "";
 };
 
-// 获取订单评级/打分
 export const getCurrentOrderStars = state => {
   return state.user.currentOrder ? state.user.currentOrder.stars : 0;
 };

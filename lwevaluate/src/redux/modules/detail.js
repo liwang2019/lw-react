@@ -5,11 +5,9 @@ import { schema as shopSchema, getShopById } from "./entities/shops";
 import { schema as productSchema, getProductDetail, getProductById } from "./entities/products";
 
 export const types = {
-  // 获取产品详情
   FETCH_PRODUCT_DETAIL_REQUEST: "DETAIL/FETCH_PRODUCT_DETAIL_REQUEST",
   FETCH_PRODUCT_DETAIL_SUCCESS: "DETAIL/FETCH_PRODUCT_DETAIL_SUCCES",
   FETCH_PRODUCT_DETAIL_FAILURE: "DETAIL/FETCH_PRODUCT_DETAIL_FAILURE",
-  // 获取关联店铺信息
   FETCH_SHOP_REQUEST: "DETAIL/FETCH_PRODUCT_DETAIL_REQUEST",
   FETCH_SHOP_SUCCESS: "DETAIL/FETCH_PRODUCT_DETAIL_SUCCES",
   FETCH_SHOP_FAILURE: "DETAIL/FETCH_PRODUCT_DETAIL_FAILURE"
@@ -27,7 +25,6 @@ const initialState = {
 };
 
 export const actions = {
-  //获取商品详情
   loadProductDetail: id => {
     return (dispatch, getState) => {
       const product = getProductDetail(getState(), id);
@@ -38,7 +35,6 @@ export const actions = {
       return dispatch(fetchProductDetail(endpoint, id));
     };
   },
-  // 获取店铺信息
   loadShopById: id => {
     return (dispatch, getState) => {
       const shop = getShopById(getState(), id);
@@ -87,7 +83,6 @@ const fetchShopSuccess = id => ({
   id
 });
 
-// 商品详情reducer
 const product = (state = initialState.product, action) => {
   switch (action.type) {
     case types.FETCH_PRODUCT_DETAIL_REQUEST:
@@ -101,7 +96,6 @@ const product = (state = initialState.product, action) => {
   }
 };
 
-// 店铺reducer
 const relatedShop = (state = initialState.relatedShop, action) => {
   switch (action.type) {
     case types.FETCH_SHOP_REQUEST:
@@ -121,17 +115,14 @@ const reducer = combineReducers({
 });
 export default reducer;
 
-// selectors
-//获取商品详情
 export const getProduct = (state, id) => {
   return getProductDetail(state, id)
 }
 
-//获取管理的店铺信息
 export const getRelatedShop = (state, productId) => {
   const product = getProductById(state, productId);
   let shopId = product ? product.nearestShop : null;
-  if(shopId) {
+  if (shopId) {
     return getShopById(state, shopId);
   }
   return null;

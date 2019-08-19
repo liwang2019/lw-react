@@ -4,7 +4,7 @@ import "./style.css";
 
 class ProductOverview extends Component {
   render() {
-    const {id, shop, picture, description, currentPrice, oldPrice} = this.props.data;
+    const { id, shop, picture, description, currentPrice, oldPrice } = this.props.data;
     return (
       <div className="productOverview">
         <div className="productOverview__header">
@@ -18,7 +18,7 @@ class ProductOverview extends Component {
           <div className="productOverview__baseInfo">
             <div className="productOverview__title">{shop}</div>
             <div className="productOverview__content">
-             {description}
+              {description}
             </div>
           </div>
         </div>
@@ -26,16 +26,16 @@ class ProductOverview extends Component {
           <span className="productOverview__symbol">¥</span>
           <span className="productOverview__price">{currentPrice}</span>
           <span className="productOverview__price--old">¥{oldPrice}</span>
-          <Link className="productOverview__btn" to={`/purchase/${id}`}>立即购买</Link>
+          <Link className="productOverview__btn" to={`/purchase/${id}`}>Buy now</Link>
         </div>
         <ul className="productOverview__remark">
           <li className="productOverview__remarkItem">
             <i className="productOverview__sign1" />
-            <span className="productOverview__desc">随时可退</span>
+            <span className="productOverview__desc">Refund anytime</span>
           </li>
           <li className="productOverview__remarkItem">
             <i className="productOverview__sign2" />
-            <span className="productOverview__desc">过期自动退</span>
+            <span className="productOverview__desc">Refund overtime</span>
           </li>
         </ul>
       </div>

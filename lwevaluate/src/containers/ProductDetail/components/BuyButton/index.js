@@ -7,7 +7,7 @@ class BuyButton extends Component {
     const { productId } = this.props;
     return (
       <Link className="buyButton" to={`/purchase/${productId}`}>
-        立即购买
+        Buy now
       </Link>
     );
   }

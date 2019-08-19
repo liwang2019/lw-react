@@ -24,7 +24,7 @@ class ShopItem extends Component {
           <div className="shopItem__comment">
             <span className={"shopItem__star shopItem__star--" + star} />
             <span className="shopItem__quantity">{quantity}</span>
-            <span className="shopItem__price">{price}/人</span>
+            <span className="shopItem__price">{price}/person</span>
           </div>
           <div className="shopItem__info">
             <span className="shopItem__region">{region}</span>

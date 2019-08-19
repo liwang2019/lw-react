@@ -5,21 +5,16 @@ import { schema as shopSchema, getShopById } from "./entities/shops";
 import { combineReducers } from "redux"
 
 export const types = {
-  //获取热门关键词
   FETCH_POPULAR_KEYWORDS_REQUEST: "SEARCH/FETCH_POPULAR_KEYWORDS_REQUEST",
   FETCH_POPULAR_KEYWORDS_SUCCESS: "SEARCH/FETCH_POPULAR_KEYWORDS_SUCCESS",
   FETCH_POPULAR_KEYWORDS_FAILURE: "SEARCH/FETCH_POPULAR_KEYWORDS_FAILURE",
-  //根据输入的文本获取相关关键词
   FETCH_RELATED_KEYWORDS_REQUEST: "SEARCH/FETCH_RELATED_KEYWORDS_REQUEST",
   FETCH_RELATED_KEYWORDS_SUCCESS: "SEARCH/FETCH_RELATED_KEYWORDS_SUCCESS",
   FETCH_RELATED_KEYWORDS_FAILURE: "SEARCH/FETCH_RELATED_KEYWORDS_FAILURE",
-  // 设置当前输入
   SET_INPUT_TEXT: "SEARCH/SET_INPUT_TEXT",
   CLEAR_INPUT_TEXT: "SEARCH/CLEAR_INPUT_TEXT",
-  // 历史查询记录
   ADD_HISTORY_KEYWORD: "SEARCH/ADD_HISTORY_KEYWORD",
   CLEAR_HISTORY_KEYWORDS: "SEARCH/CLEAR_HISTORY_KEYWORDS",
-  // 根据关键词查询结果
   FETCH_SHOPS_REQUEST: "SEARCH/FETCH_SHOPS_REQUEST",
   FETCH_SHOPS_SUCCESS: "SEARCH/FETCH_SHOPS_SUCCESS",
   FETCH_SHOPS_FAILURE: "SEARCH/FETCH_SHOPS_FAILURE",
@@ -31,31 +26,14 @@ const initialState = {
     isFetching: false,
     ids: []
   },
-  /**
-   * relatedKeywords对象结构：
-   * {
-   *   '火锅': {
-   *       isFetching: false,
-   *       ids: []
-   *    }
-   * }
-   */
+
   relatedKeywords: {},
-  historyKeywords: [], //保存关键词id
-    /**
-   * searchedShopsByKeywords结构
-   * {
-   *   'keywordId': {
-   *       isFetching: false,
-   *       ids: []
-   *    }
-   * }
-   */
+  historyKeywords: [],
+
   searchedShopsByKeyword: {}
 };
 
 export const actions = {
-  //获取热门关键词
   loadPopularKeywords: () => {
     return (dispatch, getState) => {
       const { ids } = getState().search.popularKeywords;
@@ -66,7 +44,6 @@ export const actions = {
       return dispatch(fetchPopularKeywords(endpoint));
     };
   },
-  // 根据输入获取相关关键词
   loadRelatedKeywords: text => {
     return (dispatch, getState) => {
       const { relatedKeywords } = getState().search;
@@ -77,18 +54,16 @@ export const actions = {
       return dispatch(fetchRelatedKeywords(text, endpoint));
     };
   },
-  // 获取查询到的店铺列表
   loadRelatedShops: keyword => {
     return (dispatch, getState) => {
       const { searchedShopsByKeyword } = getState().search;
-      if(searchedShopsByKeyword[keyword]) {
+      if (searchedShopsByKeyword[keyword]) {
         return null
       }
       const endpoint = url.getRelatedShops(keyword);
       return dispatch(fetchRelatedShops(keyword, endpoint));
     }
   },
-  //搜索框输入文本相关action
   setInputText: text => ({
     type: types.SET_INPUT_TEXT,
     text
@@ -96,7 +71,6 @@ export const actions = {
   clearInputText: () => ({
     type: types.CLEAR_INPUT_TEXT
   }),
-  //历史查询记录相关action
   addHistoryKeyword: keywordId => ({
     type: types.ADD_HISTORY_KEYWORD,
     text: keywordId
@@ -233,8 +207,8 @@ const searchedShops = (
   }
 };
 
-const inputText = (state = initialState.inputText, action) =>{
-  switch(action.type) {
+const inputText = (state = initialState.inputText, action) => {
+  switch (action.type) {
     case types.SET_INPUT_TEXT:
       return action.text
     case types.CLEAR_INPUT_TEXT:
@@ -245,10 +219,10 @@ const inputText = (state = initialState.inputText, action) =>{
 }
 
 const historyKeywords = (state = initialState.historyKeywords, action) => {
-  switch(action.type) {
-    case types.ADD_HISTORY_KEYWORD: 
+  switch (action.type) {
+    case types.ADD_HISTORY_KEYWORD:
       const data = state.filter(item => {
-        if(item !== action.text) {
+        if (item !== action.text) {
           return true;
         }
         return false;
@@ -281,11 +255,11 @@ export const getPopularKeywords = state => {
 
 export const getRelatedKeywords = state => {
   const text = state.search.inputText;
-  if(!text || text.trim().length === 0) {
+  if (!text || text.trim().length === 0) {
     return [];
-  } 
+  }
   const relatedKeywords = state.search.relatedKeywords[text];
-  if(!relatedKeywords) {
+  if (!relatedKeywords) {
     return []
   }
   return relatedKeywords.ids.map(id => {
@@ -303,10 +277,9 @@ export const getHistoryKeywords = state => {
   })
 }
 
-// 获取店铺列表
 export const getSearchedShops = state => {
   const keywordId = state.search.historyKeywords[0];
-  if(!keywordId) {
+  if (!keywordId) {
     return [];
   }
   const shops = state.search.searchedShopsByKeyword[keywordId];
@@ -315,10 +288,9 @@ export const getSearchedShops = state => {
   })
 }
 
-// 获取当前关键词
 export const getCurrentKeyword = state => {
   const keywordId = state.search.historyKeywords[0];
-  if(!keywordId) {
+  if (!keywordId) {
     return ""
   }
   return getKeywordById(state, keywordId).keyword;

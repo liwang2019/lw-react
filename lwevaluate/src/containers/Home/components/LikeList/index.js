@@ -14,7 +14,7 @@ class LikeList extends Component {
     const { data, pageCount } = this.props;
     return (
       <div ref={this.myRef} className="likeList">
-        <div className="likeList__header">猜你喜欢</div>
+        <div className="likeList__header">Your favorites</div>
         <div className="likeList__list">
           {data.map((item, index) => {
             return <LikeItem key={index} data={item} />;
@@ -23,19 +23,19 @@ class LikeList extends Component {
         {pageCount < 3 ? (
           <Loading />
         ) : (
-          <a className="likeList__viewAll">查看更多</a>
-        )}
+            <a className="likeList__viewAll">View more</a>
+          )}
       </div>
     );
   }
 
   componentDidMount() {
-    if(this.props.pageCount < 3 ) {
+    if (this.props.pageCount < 3) {
       document.addEventListener("scroll", this.handleScroll);
-    }else {
+    } else {
       this.removeListener = true;
     }
-    if(this.props.pageCount === 0) {
+    if (this.props.pageCount === 0) {
       this.props.fetchData();
     }
   }
@@ -53,7 +53,6 @@ class LikeList extends Component {
     }
   }
 
-  // 处理屏幕滚动事件，实现加载更多的效果
   handleScroll = () => {
     const scrollTop =
       document.documentElement.scrollTop || document.body.scrollTop;

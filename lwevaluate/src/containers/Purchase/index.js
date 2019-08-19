@@ -18,7 +18,7 @@ class Purchase extends Component {
     const { product, phone, quantity, showTip } = this.props;
     return (
       <div>
-        <Header title="下单" onBack={this.handleBack} />
+        <Header title="Submit order" onBack={this.handleBack} />
         {product ? (
           <PurchaseForm
             product={product}
@@ -29,7 +29,7 @@ class Purchase extends Component {
           />
         ) : null}
         {showTip ? (
-          <Tip message="购买成功！" onClose={this.handleCloseTip} />
+          <Tip message="Purchase succeed!" onClose={this.handleCloseTip} />
         ) : null}
       </div>
     );
@@ -55,13 +55,11 @@ class Purchase extends Component {
     this.props.purchaseActions.closeTip();
   };
 
-  // 提交订单
   handleSubmit = () => {
     const productId = this.props.match.params.id;
     this.props.purchaseActions.submitOrder(productId);
   };
 
-  //设置购买数量
   handleSetQuantity = quantity => {
     this.props.purchaseActions.setOrderQuantity(quantity);
   };
