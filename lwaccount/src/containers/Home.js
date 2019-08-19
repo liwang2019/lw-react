@@ -114,7 +114,7 @@ export class Home extends Component {
                     color={Colors.blue}
                     icon='ios-paper'
                   />
-                  列表模式
+                  List mode
               </Tab>
                 <Tab>
                   <Ionicon
@@ -123,7 +123,7 @@ export class Home extends Component {
                     color={Colors.blue}
                     icon='ios-pie'
                   />
-                  图表模式
+                  Chart mode
               </Tab>
               </Tabs>
               <CreateBtn onClick={this.createItem} />
@@ -136,13 +136,13 @@ export class Home extends Component {
               }
               {tabView === LIST_VIEW && itemsWithCategory.length === 0 &&
                 <div className="alert alert-light text-center no-record">
-                  您还没有任何记账记录
+                  No account data
               </div>
               }
               {tabView === CHART_VIEW &&
                 <React.Fragment>
-                  <PieChart title="本月支出" categoryData={chartOutcomDataByCategory} />
-                  <PieChart title="本月收入" categoryData={chartIncomeDataByCategory} />
+                  <PieChart title="Outcome in this month" categoryData={chartOutcomDataByCategory} />
+                  <PieChart title="Income in this month" categoryData={chartIncomeDataByCategory} />
                 </React.Fragment>
               }
             </React.Fragment>

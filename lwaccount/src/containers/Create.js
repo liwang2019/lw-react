@@ -23,7 +23,7 @@ export class CreatePage extends React.Component {
       const { editItem, categories } = data
       this.setState({
         selectedTab: (id && editItem) ? categories[editItem.cid].type : TYPE_OUTCOME,
-        selectedCategory: (id && editItem) ? categories[editItem.cid] : null,        
+        selectedCategory: (id && editItem) ? categories[editItem.cid] : null,
       })
     })
   }
@@ -47,7 +47,7 @@ export class CreatePage extends React.Component {
       })
       return
     }
-    if(!isEditMode) {
+    if (!isEditMode) {
       // create
       this.props.actions.createItem(data, this.state.selectedCategory.id).then(this.navigateToHome)
     } else {
@@ -55,7 +55,7 @@ export class CreatePage extends React.Component {
       this.props.actions.updateItem(data, this.state.selectedCategory.id).then(this.navigateToHome)
     }
     this.props.history.push('/')
-    
+
   }
   navigateToHome = () => {
     this.props.history.push('/')
@@ -67,30 +67,30 @@ export class CreatePage extends React.Component {
     const editItem = (id && items[id]) ? items[id] : {}
     const { selectedTab, selectedCategory, validationPassed } = this.state
     const filterCategories = Object.keys(categories)
-    .filter(id => categories[id].type === selectedTab)
-    .map(id => categories[id])
+      .filter(id => categories[id].type === selectedTab)
+      .map(id => categories[id])
     const tabIndex = tabsText.findIndex(text => text === selectedTab)
     return (
-      <div className="create-page py-3 px-3 rounded mt-3" style={{background: '#fff'}}>
-        { data.isLoading &&
+      <div className="create-page py-3 px-3 rounded mt-3" style={{ background: '#fff' }}>
+        {data.isLoading &&
           <Loader />
         }
         <Tabs activeIndex={tabIndex} onTabChange={this.tabChange}>
-          <Tab>支出</Tab>
-          <Tab>收入</Tab>
+          <Tab>Outcome</Tab>
+          <Tab>Income</Tab>
         </Tabs>
-        <CategorySelect categories={filterCategories} 
+        <CategorySelect categories={filterCategories}
           onSelectCategory={this.selectCategory}
           selectedCategory={selectedCategory}
         />
-        <PriceForm 
+        <PriceForm
           onFormSubmit={this.submitForm}
           onCancelSubmit={this.cancelSubmit}
           item={editItem}
         />
-        { !validationPassed &&
+        {!validationPassed &&
           <div className="alert alert-danger mt-5" role="alert">
-            请选择分类信息
+            Please choose category
           </div>
         }
       </div>

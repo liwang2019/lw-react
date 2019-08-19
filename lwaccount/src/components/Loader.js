@@ -8,7 +8,7 @@ const Loader = () => (
       color={Colors.blue}
       rotate={true}
     />
-    <h5>加载中</h5>
+    <h5>Loading...</h5>
   </div>
 )
 

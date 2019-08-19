@@ -4,23 +4,23 @@ import CategorySelect from '../CategorySelect'
 import Ionicon from 'react-ionicons'
 
 export const categories = [
-   {
+  {
     "id": "1",
-    "name": "旅行",
+    "name": "Travel",
     "type": "outcome",
-    "iconName": "ios-plane",    
+    "iconName": "ios-plane",
   },
-   {
+  {
     "id": "2",
-    "name": "理财",
+    "name": "Finance Plan",
     "type": "income",
-    "iconName": "logo-yen", 
+    "iconName": "logo-yen",
   },
   {
     "id": "3",
-    "name": "理财",
+    "name": "Finance Plan",
     "type": "income",
-    "iconName": "logo-yen", 
+    "iconName": "logo-yen",
   }
 ]
 
@@ -54,7 +54,7 @@ describe('test CategorySelect component', () => {
   })
   it('click the item should add active class and trigger the callback', () => {
     const wrapper = shallow(<CategorySelect {...props_with_category} />)
-    wrapper.find('.category-item').at(1).simulate('click', { preventDefault: () => {} })
+    wrapper.find('.category-item').at(1).simulate('click', { preventDefault: () => { } })
     expect(props_with_category.onSelectCategory).toHaveBeenCalledWith(categories[1])
   })
 })

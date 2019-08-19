@@ -39,7 +39,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+              "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
               "lineNumber": 52,
             },
             "actualDuration": 0,
@@ -50,7 +50,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 53,
               },
               "actualDuration": 0,
@@ -66,13 +66,13 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "memoizedState": null,
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "ref": null,
               "return": [Circular],
@@ -82,7 +82,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 54,
                 },
                 "actualDuration": 0,
@@ -98,7 +98,7 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -106,7 +106,7 @@ ReactWrapper {
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -117,7 +117,7 @@ ReactWrapper {
                 "stateNode": <button
                   class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 "tag": 7,
                 "treeBaseDuration": 0,
@@ -125,7 +125,7 @@ ReactWrapper {
                 "updateQueue": null,
               },
               "stateNode": <p>
-                选择月份
+                Choose month
 </p>,
               "tag": 7,
               "treeBaseDuration": 0,
@@ -143,13 +143,13 @@ ReactWrapper {
             "memoizedProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -161,13 +161,13 @@ ReactWrapper {
             "pendingProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -181,12 +181,12 @@ ReactWrapper {
               class="dropdown month-picker-component"
 >
               <p>
-                            选择月份
+                            Choose month
               </p>
               <button
                             class="btn btn-lg btn-secondary dropdown-toggle"
               >
-                            2018年 08月
+                            2018 08
               </button>
 </div>,
             "tag": 7,
@@ -266,12 +266,12 @@ ReactWrapper {
                                     class="dropdown month-picker-component"
                   >
                                     <p>
-                                                      选择月份
+                                                      Choose month
                                     </p>
                                     <button
                                                       class="btn btn-lg btn-secondary dropdown-toggle"
                                     >
-                                                      2018年 08月
+                                                      2018 08
                                     </button>
                   </div>
 </div>,
@@ -360,7 +360,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 52,
               },
               "actualDuration": 0,
@@ -371,7 +371,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 53,
                 },
                 "actualDuration": 0,
@@ -387,13 +387,13 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": "选择月份",
+                  "children": "Choose month",
                 },
                 "memoizedState": null,
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": "选择月份",
+                  "children": "Choose month",
                 },
                 "ref": null,
                 "return": [Circular],
@@ -403,7 +403,7 @@ ReactWrapper {
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                    "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                     "lineNumber": 54,
                   },
                   "actualDuration": 0,
@@ -419,7 +419,7 @@ ReactWrapper {
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "children": "2018年 08月",
+                    "children": "2018 08",
                     "className": "btn btn-lg btn-secondary dropdown-toggle",
                     "onClick": [Function],
                   },
@@ -427,7 +427,7 @@ ReactWrapper {
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "children": "2018年 08月",
+                    "children": "2018 08",
                     "className": "btn btn-lg btn-secondary dropdown-toggle",
                     "onClick": [Function],
                   },
@@ -438,7 +438,7 @@ ReactWrapper {
                   "stateNode": <button
                     class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   "tag": 7,
                   "treeBaseDuration": 0,
@@ -446,7 +446,7 @@ ReactWrapper {
                   "updateQueue": null,
                 },
                 "stateNode": <p>
-                  选择月份
+                  Choose month
 </p>,
                 "tag": 7,
                 "treeBaseDuration": 0,
@@ -464,13 +464,13 @@ ReactWrapper {
               "memoizedProps": Object {
                 "children": Array [
                   <p>
-                    选择月份
+                    Choose month
 </p>,
                   <button
                     className="btn btn-lg btn-secondary dropdown-toggle"
                     onClick={[Function]}
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   false,
                 ],
@@ -482,13 +482,13 @@ ReactWrapper {
               "pendingProps": Object {
                 "children": Array [
                   <p>
-                    选择月份
+                    Choose month
 </p>,
                   <button
                     className="btn btn-lg btn-secondary dropdown-toggle"
                     onClick={[Function]}
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   false,
                 ],
@@ -502,12 +502,12 @@ ReactWrapper {
                 class="dropdown month-picker-component"
 >
                 <p>
-                                选择月份
+                                Choose month
                 </p>
                 <button
                                 class="btn btn-lg btn-secondary dropdown-toggle"
                 >
-                                2018年 08月
+                                2018 08
                 </button>
 </div>,
               "tag": 7,
@@ -545,12 +545,12 @@ ReactWrapper {
                                 class="dropdown month-picker-component"
                 >
                                 <p>
-                                                选择月份
+                                                Choose month
                                 </p>
                                 <button
                                                 class="btn btn-lg btn-secondary dropdown-toggle"
                                 >
-                                                2018年 08月
+                                                2018 08
                                 </button>
                 </div>
 </div>,
@@ -649,7 +649,7 @@ ReactWrapper {
           "_debugIsCurrentlyTiming": false,
           "_debugOwner": [Circular],
           "_debugSource": Object {
-            "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+            "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
             "lineNumber": 52,
           },
           "actualDuration": 0,
@@ -660,7 +660,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+              "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
               "lineNumber": 53,
             },
             "actualDuration": 0,
@@ -676,13 +676,13 @@ ReactWrapper {
             "key": null,
             "lastEffect": null,
             "memoizedProps": Object {
-              "children": "选择月份",
+              "children": "Choose month",
             },
             "memoizedState": null,
             "mode": 0,
             "nextEffect": null,
             "pendingProps": Object {
-              "children": "选择月份",
+              "children": "Choose month",
             },
             "ref": null,
             "return": [Circular],
@@ -692,7 +692,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 54,
               },
               "actualDuration": 0,
@@ -708,7 +708,7 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": "2018年 08月",
+                "children": "2018 08",
                 "className": "btn btn-lg btn-secondary dropdown-toggle",
                 "onClick": [Function],
               },
@@ -716,7 +716,7 @@ ReactWrapper {
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": "2018年 08月",
+                "children": "2018 08",
                 "className": "btn btn-lg btn-secondary dropdown-toggle",
                 "onClick": [Function],
               },
@@ -727,7 +727,7 @@ ReactWrapper {
               "stateNode": <button
                 class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                2018年 08月
+                2018 08
 </button>,
               "tag": 7,
               "treeBaseDuration": 0,
@@ -735,7 +735,7 @@ ReactWrapper {
               "updateQueue": null,
             },
             "stateNode": <p>
-              选择月份
+              Choose month
 </p>,
             "tag": 7,
             "treeBaseDuration": 0,
@@ -753,13 +753,13 @@ ReactWrapper {
           "memoizedProps": Object {
             "children": Array [
               <p>
-                选择月份
+                Choose month
 </p>,
               <button
                 className="btn btn-lg btn-secondary dropdown-toggle"
                 onClick={[Function]}
 >
-                2018年 08月
+                2018 08
 </button>,
               false,
             ],
@@ -771,13 +771,13 @@ ReactWrapper {
           "pendingProps": Object {
             "children": Array [
               <p>
-                选择月份
+                Choose month
 </p>,
               <button
                 className="btn btn-lg btn-secondary dropdown-toggle"
                 onClick={[Function]}
 >
-                2018年 08月
+                2018 08
 </button>,
               false,
             ],
@@ -791,12 +791,12 @@ ReactWrapper {
             class="dropdown month-picker-component"
 >
             <p>
-                        选择月份
+                        Choose month
             </p>
             <button
                         class="btn btn-lg btn-secondary dropdown-toggle"
             >
-                        2018年 08月
+                        2018 08
             </button>
 </div>,
           "tag": 7,
@@ -813,7 +813,7 @@ ReactWrapper {
           "_debugIsCurrentlyTiming": false,
           "_debugOwner": [Circular],
           "_debugSource": Object {
-            "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+            "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
             "lineNumber": 52,
           },
           "actualDuration": 0,
@@ -824,7 +824,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+              "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
               "lineNumber": 53,
             },
             "actualDuration": 0,
@@ -840,13 +840,13 @@ ReactWrapper {
             "key": null,
             "lastEffect": null,
             "memoizedProps": Object {
-              "children": "选择月份",
+              "children": "Choose month",
             },
             "memoizedState": null,
             "mode": 0,
             "nextEffect": null,
             "pendingProps": Object {
-              "children": "选择月份",
+              "children": "Choose month",
             },
             "ref": null,
             "return": [Circular],
@@ -856,7 +856,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 54,
               },
               "actualDuration": 0,
@@ -872,7 +872,7 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": "2018年 08月",
+                "children": "2018 08",
                 "className": "btn btn-lg btn-secondary dropdown-toggle",
                 "onClick": [Function],
               },
@@ -880,7 +880,7 @@ ReactWrapper {
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": "2018年 08月",
+                "children": "2018 08",
                 "className": "btn btn-lg btn-secondary dropdown-toggle",
                 "onClick": [Function],
               },
@@ -891,7 +891,7 @@ ReactWrapper {
               "stateNode": <button
                 class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                2018年 08月
+                2018 08
 </button>,
               "tag": 7,
               "treeBaseDuration": 0,
@@ -899,7 +899,7 @@ ReactWrapper {
               "updateQueue": null,
             },
             "stateNode": <p>
-              选择月份
+              Choose month
 </p>,
             "tag": 7,
             "treeBaseDuration": 0,
@@ -917,13 +917,13 @@ ReactWrapper {
           "memoizedProps": Object {
             "children": Array [
               <p>
-                选择月份
+                Choose month
 </p>,
               <button
                 className="btn btn-lg btn-secondary dropdown-toggle"
                 onClick={[Function]}
 >
-                2018年 08月
+                2018 08
 </button>,
               false,
             ],
@@ -935,13 +935,13 @@ ReactWrapper {
           "pendingProps": Object {
             "children": Array [
               <p>
-                选择月份
+                Choose month
 </p>,
               <button
                 className="btn btn-lg btn-secondary dropdown-toggle"
                 onClick={[Function]}
 >
-                2018年 08月
+                2018 08
 </button>,
               false,
             ],
@@ -955,12 +955,12 @@ ReactWrapper {
             class="dropdown month-picker-component"
 >
             <p>
-                        选择月份
+                        Choose month
             </p>
             <button
                         class="btn btn-lg btn-secondary dropdown-toggle"
             >
-                        2018年 08月
+                        2018 08
             </button>
 </div>,
           "tag": 7,
@@ -975,7 +975,7 @@ ReactWrapper {
           "_debugIsCurrentlyTiming": false,
           "_debugOwner": [Circular],
           "_debugSource": Object {
-            "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+            "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
             "lineNumber": 52,
           },
           "actualDuration": 0,
@@ -986,7 +986,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+              "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
               "lineNumber": 53,
             },
             "actualDuration": 0,
@@ -1002,13 +1002,13 @@ ReactWrapper {
             "key": null,
             "lastEffect": null,
             "memoizedProps": Object {
-              "children": "选择月份",
+              "children": "Choose month",
             },
             "memoizedState": null,
             "mode": 0,
             "nextEffect": null,
             "pendingProps": Object {
-              "children": "选择月份",
+              "children": "Choose month",
             },
             "ref": null,
             "return": [Circular],
@@ -1018,7 +1018,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 54,
               },
               "actualDuration": 0,
@@ -1034,7 +1034,7 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": "2018年 08月",
+                "children": "2018 08",
                 "className": "btn btn-lg btn-secondary dropdown-toggle",
                 "onClick": [Function],
               },
@@ -1042,7 +1042,7 @@ ReactWrapper {
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": "2018年 08月",
+                "children": "2018 08",
                 "className": "btn btn-lg btn-secondary dropdown-toggle",
                 "onClick": [Function],
               },
@@ -1053,7 +1053,7 @@ ReactWrapper {
               "stateNode": <button
                 class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                2018年 08月
+                2018 08
 </button>,
               "tag": 7,
               "treeBaseDuration": 0,
@@ -1061,7 +1061,7 @@ ReactWrapper {
               "updateQueue": null,
             },
             "stateNode": <p>
-              选择月份
+              Choose month
 </p>,
             "tag": 7,
             "treeBaseDuration": 0,
@@ -1079,13 +1079,13 @@ ReactWrapper {
           "memoizedProps": Object {
             "children": Array [
               <p>
-                选择月份
+                Choose month
 </p>,
               <button
                 className="btn btn-lg btn-secondary dropdown-toggle"
                 onClick={[Function]}
 >
-                2018年 08月
+                2018 08
 </button>,
               false,
             ],
@@ -1097,13 +1097,13 @@ ReactWrapper {
           "pendingProps": Object {
             "children": Array [
               <p>
-                选择月份
+                Choose month
 </p>,
               <button
                 className="btn btn-lg btn-secondary dropdown-toggle"
                 onClick={[Function]}
 >
-                2018年 08月
+                2018 08
 </button>,
               false,
             ],
@@ -1117,12 +1117,12 @@ ReactWrapper {
             class="dropdown month-picker-component"
 >
             <p>
-                        选择月份
+                        Choose month
             </p>
             <button
                         class="btn btn-lg btn-secondary dropdown-toggle"
             >
-                        2018年 08月
+                        2018 08
             </button>
 </div>,
           "tag": 7,
@@ -1165,7 +1165,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+              "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
               "lineNumber": 52,
             },
             "actualDuration": 0,
@@ -1176,7 +1176,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 53,
               },
               "actualDuration": 0,
@@ -1192,13 +1192,13 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "memoizedState": null,
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "ref": null,
               "return": [Circular],
@@ -1208,7 +1208,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 54,
                 },
                 "actualDuration": 0,
@@ -1224,7 +1224,7 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -1232,7 +1232,7 @@ ReactWrapper {
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -1243,7 +1243,7 @@ ReactWrapper {
                 "stateNode": <button
                   class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 "tag": 7,
                 "treeBaseDuration": 0,
@@ -1251,7 +1251,7 @@ ReactWrapper {
                 "updateQueue": null,
               },
               "stateNode": <p>
-                选择月份
+                Choose month
 </p>,
               "tag": 7,
               "treeBaseDuration": 0,
@@ -1269,13 +1269,13 @@ ReactWrapper {
             "memoizedProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -1287,13 +1287,13 @@ ReactWrapper {
             "pendingProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -1307,12 +1307,12 @@ ReactWrapper {
               class="dropdown month-picker-component"
 >
               <p>
-                            选择月份
+                            Choose month
               </p>
               <button
                             class="btn btn-lg btn-secondary dropdown-toggle"
               >
-                            2018年 08月
+                            2018 08
               </button>
 </div>,
             "tag": 7,
@@ -1392,12 +1392,12 @@ ReactWrapper {
                                     class="dropdown month-picker-component"
                   >
                                     <p>
-                                                      选择月份
+                                                      Choose month
                                     </p>
                                     <button
                                                       class="btn btn-lg btn-secondary dropdown-toggle"
                                     >
-                                                      2018年 08月
+                                                      2018 08
                                     </button>
                   </div>
 </div>,
@@ -1486,7 +1486,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 52,
               },
               "actualDuration": 0,
@@ -1497,7 +1497,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 53,
                 },
                 "actualDuration": 0,
@@ -1513,13 +1513,13 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": "选择月份",
+                  "children": "Choose month",
                 },
                 "memoizedState": null,
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": "选择月份",
+                  "children": "Choose month",
                 },
                 "ref": null,
                 "return": [Circular],
@@ -1529,7 +1529,7 @@ ReactWrapper {
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                    "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                     "lineNumber": 54,
                   },
                   "actualDuration": 0,
@@ -1545,7 +1545,7 @@ ReactWrapper {
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "children": "2018年 08月",
+                    "children": "2018 08",
                     "className": "btn btn-lg btn-secondary dropdown-toggle",
                     "onClick": [Function],
                   },
@@ -1553,7 +1553,7 @@ ReactWrapper {
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "children": "2018年 08月",
+                    "children": "2018 08",
                     "className": "btn btn-lg btn-secondary dropdown-toggle",
                     "onClick": [Function],
                   },
@@ -1564,7 +1564,7 @@ ReactWrapper {
                   "stateNode": <button
                     class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   "tag": 7,
                   "treeBaseDuration": 0,
@@ -1572,7 +1572,7 @@ ReactWrapper {
                   "updateQueue": null,
                 },
                 "stateNode": <p>
-                  选择月份
+                  Choose month
 </p>,
                 "tag": 7,
                 "treeBaseDuration": 0,
@@ -1590,13 +1590,13 @@ ReactWrapper {
               "memoizedProps": Object {
                 "children": Array [
                   <p>
-                    选择月份
+                    Choose month
 </p>,
                   <button
                     className="btn btn-lg btn-secondary dropdown-toggle"
                     onClick={[Function]}
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   false,
                 ],
@@ -1608,13 +1608,13 @@ ReactWrapper {
               "pendingProps": Object {
                 "children": Array [
                   <p>
-                    选择月份
+                    Choose month
 </p>,
                   <button
                     className="btn btn-lg btn-secondary dropdown-toggle"
                     onClick={[Function]}
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   false,
                 ],
@@ -1628,12 +1628,12 @@ ReactWrapper {
                 class="dropdown month-picker-component"
 >
                 <p>
-                                选择月份
+                                Choose month
                 </p>
                 <button
                                 class="btn btn-lg btn-secondary dropdown-toggle"
                 >
-                                2018年 08月
+                                2018 08
                 </button>
 </div>,
               "tag": 7,
@@ -1671,12 +1671,12 @@ ReactWrapper {
                                 class="dropdown month-picker-component"
                 >
                                 <p>
-                                                选择月份
+                                                Choose month
                                 </p>
                                 <button
                                                 class="btn btn-lg btn-secondary dropdown-toggle"
                                 >
-                                                2018年 08月
+                                                2018 08
                                 </button>
                 </div>
 </div>,
@@ -1781,12 +1781,12 @@ ReactWrapper {
         class="dropdown month-picker-component"
 >
         <p>
-                选择月份
+                Choose month
         </p>
         <button
                 class="btn btn-lg btn-secondary dropdown-toggle"
         >
-                2018年 08月
+                2018 08
         </button>
 </div>,
       "props": Object {
@@ -1822,12 +1822,12 @@ ReactWrapper {
         class="dropdown month-picker-component"
 >
         <p>
-                选择月份
+                Choose month
         </p>
         <button
                 class="btn btn-lg btn-secondary dropdown-toggle"
         >
-                2018年 08月
+                2018 08
         </button>
 </div>,
       "key": undefined,
@@ -1835,13 +1835,13 @@ ReactWrapper {
       "props": Object {
         "children": Array [
           <p>
-            选择月份
+            Choose month
 </p>,
           <button
             className="btn btn-lg btn-secondary dropdown-toggle"
             onClick={[Function]}
 >
-            2018年 08月
+            2018 08
 </button>,
           false,
         ],
@@ -1851,16 +1851,16 @@ ReactWrapper {
       "rendered": Array [
         Object {
           "instance": <p>
-            选择月份
+            Choose month
 </p>,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "选择月份",
+            "children": "Choose month",
           },
           "ref": null,
           "rendered": Array [
-            "选择月份",
+            "Choose month",
           ],
           "type": "p",
         },
@@ -1868,18 +1868,18 @@ ReactWrapper {
           "instance": <button
             class="btn btn-lg btn-secondary dropdown-toggle"
 >
-            2018年 08月
+            2018 08
 </button>,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "2018年 08月",
+            "children": "2018 08",
             "className": "btn btn-lg btn-secondary dropdown-toggle",
             "onClick": [Function],
           },
           "ref": null,
           "rendered": Array [
-            "2018年 08月",
+            "2018 08",
           ],
           "type": "button",
         },
@@ -1912,7 +1912,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 52,
               },
               "actualDuration": 0,
@@ -1923,7 +1923,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 53,
                 },
                 "actualDuration": 0,
@@ -1939,13 +1939,13 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": "选择月份",
+                  "children": "Choose month",
                 },
                 "memoizedState": null,
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": "选择月份",
+                  "children": "Choose month",
                 },
                 "ref": null,
                 "return": [Circular],
@@ -1955,7 +1955,7 @@ ReactWrapper {
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                    "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                     "lineNumber": 54,
                   },
                   "actualDuration": 0,
@@ -1971,7 +1971,7 @@ ReactWrapper {
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "children": "2018年 08月",
+                    "children": "2018 08",
                     "className": "btn btn-lg btn-secondary dropdown-toggle",
                     "onClick": [Function],
                   },
@@ -1979,7 +1979,7 @@ ReactWrapper {
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "children": "2018年 08月",
+                    "children": "2018 08",
                     "className": "btn btn-lg btn-secondary dropdown-toggle",
                     "onClick": [Function],
                   },
@@ -1990,7 +1990,7 @@ ReactWrapper {
                   "stateNode": <button
                     class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   "tag": 7,
                   "treeBaseDuration": 0,
@@ -1998,7 +1998,7 @@ ReactWrapper {
                   "updateQueue": null,
                 },
                 "stateNode": <p>
-                  选择月份
+                  Choose month
 </p>,
                 "tag": 7,
                 "treeBaseDuration": 0,
@@ -2016,13 +2016,13 @@ ReactWrapper {
               "memoizedProps": Object {
                 "children": Array [
                   <p>
-                    选择月份
+                    Choose month
 </p>,
                   <button
                     className="btn btn-lg btn-secondary dropdown-toggle"
                     onClick={[Function]}
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   false,
                 ],
@@ -2034,13 +2034,13 @@ ReactWrapper {
               "pendingProps": Object {
                 "children": Array [
                   <p>
-                    选择月份
+                    Choose month
 </p>,
                   <button
                     className="btn btn-lg btn-secondary dropdown-toggle"
                     onClick={[Function]}
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   false,
                 ],
@@ -2054,12 +2054,12 @@ ReactWrapper {
                 class="dropdown month-picker-component"
 >
                 <p>
-                                选择月份
+                                Choose month
                 </p>
                 <button
                                 class="btn btn-lg btn-secondary dropdown-toggle"
                 >
-                                2018年 08月
+                                2018 08
                 </button>
 </div>,
               "tag": 7,
@@ -2139,12 +2139,12 @@ ReactWrapper {
                                         class="dropdown month-picker-component"
                     >
                                         <p>
-                                                            选择月份
+                                                            Choose month
                                         </p>
                                         <button
                                                             class="btn btn-lg btn-secondary dropdown-toggle"
                                         >
-                                                            2018年 08月
+                                                            2018 08
                                         </button>
                     </div>
 </div>,
@@ -2233,7 +2233,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 52,
                 },
                 "actualDuration": 0,
@@ -2244,7 +2244,7 @@ ReactWrapper {
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                    "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                     "lineNumber": 53,
                   },
                   "actualDuration": 0,
@@ -2260,13 +2260,13 @@ ReactWrapper {
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "children": "选择月份",
+                    "children": "Choose month",
                   },
                   "memoizedState": null,
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "children": "选择月份",
+                    "children": "Choose month",
                   },
                   "ref": null,
                   "return": [Circular],
@@ -2276,7 +2276,7 @@ ReactWrapper {
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
-                      "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                      "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                       "lineNumber": 54,
                     },
                     "actualDuration": 0,
@@ -2292,7 +2292,7 @@ ReactWrapper {
                     "key": null,
                     "lastEffect": null,
                     "memoizedProps": Object {
-                      "children": "2018年 08月",
+                      "children": "2018 08",
                       "className": "btn btn-lg btn-secondary dropdown-toggle",
                       "onClick": [Function],
                     },
@@ -2300,7 +2300,7 @@ ReactWrapper {
                     "mode": 0,
                     "nextEffect": null,
                     "pendingProps": Object {
-                      "children": "2018年 08月",
+                      "children": "2018 08",
                       "className": "btn btn-lg btn-secondary dropdown-toggle",
                       "onClick": [Function],
                     },
@@ -2311,7 +2311,7 @@ ReactWrapper {
                     "stateNode": <button
                       class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                      2018年 08月
+                      2018 08
 </button>,
                     "tag": 7,
                     "treeBaseDuration": 0,
@@ -2319,7 +2319,7 @@ ReactWrapper {
                     "updateQueue": null,
                   },
                   "stateNode": <p>
-                    选择月份
+                    Choose month
 </p>,
                   "tag": 7,
                   "treeBaseDuration": 0,
@@ -2337,13 +2337,13 @@ ReactWrapper {
                 "memoizedProps": Object {
                   "children": Array [
                     <p>
-                      选择月份
+                      Choose month
 </p>,
                     <button
                       className="btn btn-lg btn-secondary dropdown-toggle"
                       onClick={[Function]}
 >
-                      2018年 08月
+                      2018 08
 </button>,
                     false,
                   ],
@@ -2355,13 +2355,13 @@ ReactWrapper {
                 "pendingProps": Object {
                   "children": Array [
                     <p>
-                      选择月份
+                      Choose month
 </p>,
                     <button
                       className="btn btn-lg btn-secondary dropdown-toggle"
                       onClick={[Function]}
 >
-                      2018年 08月
+                      2018 08
 </button>,
                     false,
                   ],
@@ -2375,12 +2375,12 @@ ReactWrapper {
                   class="dropdown month-picker-component"
 >
                   <p>
-                                    选择月份
+                                    Choose month
                   </p>
                   <button
                                     class="btn btn-lg btn-secondary dropdown-toggle"
                   >
-                                    2018年 08月
+                                    2018 08
                   </button>
 </div>,
                 "tag": 7,
@@ -2418,12 +2418,12 @@ ReactWrapper {
                                     class="dropdown month-picker-component"
                   >
                                     <p>
-                                                      选择月份
+                                                      Choose month
                                     </p>
                                     <button
                                                       class="btn btn-lg btn-secondary dropdown-toggle"
                                     >
-                                                      2018年 08月
+                                                      2018 08
                                     </button>
                   </div>
 </div>,
@@ -2522,7 +2522,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+              "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
               "lineNumber": 52,
             },
             "actualDuration": 0,
@@ -2533,7 +2533,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 53,
               },
               "actualDuration": 0,
@@ -2549,13 +2549,13 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "memoizedState": null,
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "ref": null,
               "return": [Circular],
@@ -2565,7 +2565,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 54,
                 },
                 "actualDuration": 0,
@@ -2581,7 +2581,7 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -2589,7 +2589,7 @@ ReactWrapper {
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -2600,7 +2600,7 @@ ReactWrapper {
                 "stateNode": <button
                   class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 "tag": 7,
                 "treeBaseDuration": 0,
@@ -2608,7 +2608,7 @@ ReactWrapper {
                 "updateQueue": null,
               },
               "stateNode": <p>
-                选择月份
+                Choose month
 </p>,
               "tag": 7,
               "treeBaseDuration": 0,
@@ -2626,13 +2626,13 @@ ReactWrapper {
             "memoizedProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -2644,13 +2644,13 @@ ReactWrapper {
             "pendingProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -2664,12 +2664,12 @@ ReactWrapper {
               class="dropdown month-picker-component"
 >
               <p>
-                            选择月份
+                            Choose month
               </p>
               <button
                             class="btn btn-lg btn-secondary dropdown-toggle"
               >
-                            2018年 08月
+                            2018 08
               </button>
 </div>,
             "tag": 7,
@@ -2686,7 +2686,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+              "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
               "lineNumber": 52,
             },
             "actualDuration": 0,
@@ -2697,7 +2697,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 53,
               },
               "actualDuration": 0,
@@ -2713,13 +2713,13 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "memoizedState": null,
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "ref": null,
               "return": [Circular],
@@ -2729,7 +2729,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 54,
                 },
                 "actualDuration": 0,
@@ -2745,7 +2745,7 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -2753,7 +2753,7 @@ ReactWrapper {
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -2764,7 +2764,7 @@ ReactWrapper {
                 "stateNode": <button
                   class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 "tag": 7,
                 "treeBaseDuration": 0,
@@ -2772,7 +2772,7 @@ ReactWrapper {
                 "updateQueue": null,
               },
               "stateNode": <p>
-                选择月份
+                Choose month
 </p>,
               "tag": 7,
               "treeBaseDuration": 0,
@@ -2790,13 +2790,13 @@ ReactWrapper {
             "memoizedProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -2808,13 +2808,13 @@ ReactWrapper {
             "pendingProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -2828,12 +2828,12 @@ ReactWrapper {
               class="dropdown month-picker-component"
 >
               <p>
-                            选择月份
+                            Choose month
               </p>
               <button
                             class="btn btn-lg btn-secondary dropdown-toggle"
               >
-                            2018年 08月
+                            2018 08
               </button>
 </div>,
             "tag": 7,
@@ -2848,7 +2848,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+              "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
               "lineNumber": 52,
             },
             "actualDuration": 0,
@@ -2859,7 +2859,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 53,
               },
               "actualDuration": 0,
@@ -2875,13 +2875,13 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "memoizedState": null,
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": "选择月份",
+                "children": "Choose month",
               },
               "ref": null,
               "return": [Circular],
@@ -2891,7 +2891,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 54,
                 },
                 "actualDuration": 0,
@@ -2907,7 +2907,7 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -2915,7 +2915,7 @@ ReactWrapper {
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": "2018年 08月",
+                  "children": "2018 08",
                   "className": "btn btn-lg btn-secondary dropdown-toggle",
                   "onClick": [Function],
                 },
@@ -2926,7 +2926,7 @@ ReactWrapper {
                 "stateNode": <button
                   class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 "tag": 7,
                 "treeBaseDuration": 0,
@@ -2934,7 +2934,7 @@ ReactWrapper {
                 "updateQueue": null,
               },
               "stateNode": <p>
-                选择月份
+                Choose month
 </p>,
               "tag": 7,
               "treeBaseDuration": 0,
@@ -2952,13 +2952,13 @@ ReactWrapper {
             "memoizedProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -2970,13 +2970,13 @@ ReactWrapper {
             "pendingProps": Object {
               "children": Array [
                 <p>
-                  选择月份
+                  Choose month
 </p>,
                 <button
                   className="btn btn-lg btn-secondary dropdown-toggle"
                   onClick={[Function]}
 >
-                  2018年 08月
+                  2018 08
 </button>,
                 false,
               ],
@@ -2990,12 +2990,12 @@ ReactWrapper {
               class="dropdown month-picker-component"
 >
               <p>
-                            选择月份
+                            Choose month
               </p>
               <button
                             class="btn btn-lg btn-secondary dropdown-toggle"
               >
-                            2018年 08月
+                            2018 08
               </button>
 </div>,
             "tag": 7,
@@ -3038,7 +3038,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                 "lineNumber": 52,
               },
               "actualDuration": 0,
@@ -3049,7 +3049,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 53,
                 },
                 "actualDuration": 0,
@@ -3065,13 +3065,13 @@ ReactWrapper {
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": "选择月份",
+                  "children": "Choose month",
                 },
                 "memoizedState": null,
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": "选择月份",
+                  "children": "Choose month",
                 },
                 "ref": null,
                 "return": [Circular],
@@ -3081,7 +3081,7 @@ ReactWrapper {
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                    "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                     "lineNumber": 54,
                   },
                   "actualDuration": 0,
@@ -3097,7 +3097,7 @@ ReactWrapper {
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "children": "2018年 08月",
+                    "children": "2018 08",
                     "className": "btn btn-lg btn-secondary dropdown-toggle",
                     "onClick": [Function],
                   },
@@ -3105,7 +3105,7 @@ ReactWrapper {
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "children": "2018年 08月",
+                    "children": "2018 08",
                     "className": "btn btn-lg btn-secondary dropdown-toggle",
                     "onClick": [Function],
                   },
@@ -3116,7 +3116,7 @@ ReactWrapper {
                   "stateNode": <button
                     class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   "tag": 7,
                   "treeBaseDuration": 0,
@@ -3124,7 +3124,7 @@ ReactWrapper {
                   "updateQueue": null,
                 },
                 "stateNode": <p>
-                  选择月份
+                  Choose month
 </p>,
                 "tag": 7,
                 "treeBaseDuration": 0,
@@ -3142,13 +3142,13 @@ ReactWrapper {
               "memoizedProps": Object {
                 "children": Array [
                   <p>
-                    选择月份
+                    Choose month
 </p>,
                   <button
                     className="btn btn-lg btn-secondary dropdown-toggle"
                     onClick={[Function]}
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   false,
                 ],
@@ -3160,13 +3160,13 @@ ReactWrapper {
               "pendingProps": Object {
                 "children": Array [
                   <p>
-                    选择月份
+                    Choose month
 </p>,
                   <button
                     className="btn btn-lg btn-secondary dropdown-toggle"
                     onClick={[Function]}
 >
-                    2018年 08月
+                    2018 08
 </button>,
                   false,
                 ],
@@ -3180,12 +3180,12 @@ ReactWrapper {
                 class="dropdown month-picker-component"
 >
                 <p>
-                                选择月份
+                                Choose month
                 </p>
                 <button
                                 class="btn btn-lg btn-secondary dropdown-toggle"
                 >
-                                2018年 08月
+                                2018 08
                 </button>
 </div>,
               "tag": 7,
@@ -3265,12 +3265,12 @@ ReactWrapper {
                                         class="dropdown month-picker-component"
                     >
                                         <p>
-                                                            选择月份
+                                                            Choose month
                                         </p>
                                         <button
                                                             class="btn btn-lg btn-secondary dropdown-toggle"
                                         >
-                                                            2018年 08月
+                                                            2018 08
                                         </button>
                     </div>
 </div>,
@@ -3359,7 +3359,7 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                  "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                   "lineNumber": 52,
                 },
                 "actualDuration": 0,
@@ -3370,7 +3370,7 @@ ReactWrapper {
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                    "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                     "lineNumber": 53,
                   },
                   "actualDuration": 0,
@@ -3386,13 +3386,13 @@ ReactWrapper {
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "children": "选择月份",
+                    "children": "Choose month",
                   },
                   "memoizedState": null,
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "children": "选择月份",
+                    "children": "Choose month",
                   },
                   "ref": null,
                   "return": [Circular],
@@ -3402,7 +3402,7 @@ ReactWrapper {
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
-                      "fileName": "/Users/vzhang/Public/money-book/src/components/MonthPicker.js",
+                      "fileName": "C:\\\\dev\\\\lw-react\\\\lwaccount\\\\src\\\\components\\\\MonthPicker.js",
                       "lineNumber": 54,
                     },
                     "actualDuration": 0,
@@ -3418,7 +3418,7 @@ ReactWrapper {
                     "key": null,
                     "lastEffect": null,
                     "memoizedProps": Object {
-                      "children": "2018年 08月",
+                      "children": "2018 08",
                       "className": "btn btn-lg btn-secondary dropdown-toggle",
                       "onClick": [Function],
                     },
@@ -3426,7 +3426,7 @@ ReactWrapper {
                     "mode": 0,
                     "nextEffect": null,
                     "pendingProps": Object {
-                      "children": "2018年 08月",
+                      "children": "2018 08",
                       "className": "btn btn-lg btn-secondary dropdown-toggle",
                       "onClick": [Function],
                     },
@@ -3437,7 +3437,7 @@ ReactWrapper {
                     "stateNode": <button
                       class="btn btn-lg btn-secondary dropdown-toggle"
 >
-                      2018年 08月
+                      2018 08
 </button>,
                     "tag": 7,
                     "treeBaseDuration": 0,
@@ -3445,7 +3445,7 @@ ReactWrapper {
                     "updateQueue": null,
                   },
                   "stateNode": <p>
-                    选择月份
+                    Choose month
 </p>,
                   "tag": 7,
                   "treeBaseDuration": 0,
@@ -3463,13 +3463,13 @@ ReactWrapper {
                 "memoizedProps": Object {
                   "children": Array [
                     <p>
-                      选择月份
+                      Choose month
 </p>,
                     <button
                       className="btn btn-lg btn-secondary dropdown-toggle"
                       onClick={[Function]}
 >
-                      2018年 08月
+                      2018 08
 </button>,
                     false,
                   ],
@@ -3481,13 +3481,13 @@ ReactWrapper {
                 "pendingProps": Object {
                   "children": Array [
                     <p>
-                      选择月份
+                      Choose month
 </p>,
                     <button
                       className="btn btn-lg btn-secondary dropdown-toggle"
                       onClick={[Function]}
 >
-                      2018年 08月
+                      2018 08
 </button>,
                     false,
                   ],
@@ -3501,12 +3501,12 @@ ReactWrapper {
                   class="dropdown month-picker-component"
 >
                   <p>
-                                    选择月份
+                                    Choose month
                   </p>
                   <button
                                     class="btn btn-lg btn-secondary dropdown-toggle"
                   >
-                                    2018年 08月
+                                    2018 08
                   </button>
 </div>,
                 "tag": 7,
@@ -3544,12 +3544,12 @@ ReactWrapper {
                                     class="dropdown month-picker-component"
                   >
                                     <p>
-                                                      选择月份
+                                                      Choose month
                                     </p>
                                     <button
                                                       class="btn btn-lg btn-secondary dropdown-toggle"
                                     >
-                                                      2018年 08月
+                                                      2018 08
                                     </button>
                   </div>
 </div>,
@@ -3654,12 +3654,12 @@ ReactWrapper {
           class="dropdown month-picker-component"
 >
           <p>
-                    选择月份
+                    Choose month
           </p>
           <button
                     class="btn btn-lg btn-secondary dropdown-toggle"
           >
-                    2018年 08月
+                    2018 08
           </button>
 </div>,
         "props": Object {
@@ -3695,12 +3695,12 @@ ReactWrapper {
           class="dropdown month-picker-component"
 >
           <p>
-                    选择月份
+                    Choose month
           </p>
           <button
                     class="btn btn-lg btn-secondary dropdown-toggle"
           >
-                    2018年 08月
+                    2018 08
           </button>
 </div>,
         "key": undefined,
@@ -3708,13 +3708,13 @@ ReactWrapper {
         "props": Object {
           "children": Array [
             <p>
-              选择月份
+              Choose month
 </p>,
             <button
               className="btn btn-lg btn-secondary dropdown-toggle"
               onClick={[Function]}
 >
-              2018年 08月
+              2018 08
 </button>,
             false,
           ],
@@ -3724,16 +3724,16 @@ ReactWrapper {
         "rendered": Array [
           Object {
             "instance": <p>
-              选择月份
+              Choose month
 </p>,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "选择月份",
+              "children": "Choose month",
             },
             "ref": null,
             "rendered": Array [
-              "选择月份",
+              "Choose month",
             ],
             "type": "p",
           },
@@ -3741,18 +3741,18 @@ ReactWrapper {
             "instance": <button
               class="btn btn-lg btn-secondary dropdown-toggle"
 >
-              2018年 08月
+              2018 08
 </button>,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "2018年 08月",
+              "children": "2018 08",
               "className": "btn btn-lg btn-secondary dropdown-toggle",
               "onClick": [Function],
             },
             "ref": null,
             "rendered": Array [
-              "2018年 08月",
+              "2018 08",
             ],
             "type": "button",
           },

@@ -10,7 +10,7 @@ ShallowWrapper {
               "category": Object {
                 "iconName": "ios-plane",
                 "id": "1",
-                "name": "旅行",
+                "name": "Travel",
                 "type": "outcome",
               },
               "cid": "1",
@@ -25,7 +25,7 @@ ShallowWrapper {
               "category": Object {
                 "iconName": "ios-restaurant",
                 "id": "2",
-                "name": "餐饮",
+                "name": "Catering",
                 "type": "outcome",
               },
               "cid": "2",
@@ -34,13 +34,13 @@ ShallowWrapper {
               "monthCategory": "2018-8",
               "price": 20000,
               "timestamp": 1534550400000,
-              "title": "这是我的工资",
+              "title": "This is my salary",
             },
             Object {
               "category": Object {
                 "iconName": "ios-basket",
                 "id": "3",
-                "name": "购物",
+                "name": "Shopping",
                 "type": "outcome",
               },
               "cid": "3",
@@ -49,13 +49,13 @@ ShallowWrapper {
               "monthCategory": "2018-8",
               "price": 300,
               "timestamp": 1534723200000,
-              "title": "和哥们一起喝酒",
+              "title": "Dinner with friends",
             },
             Object {
               "category": Object {
                 "iconName": "ios-cash",
                 "id": "11",
-                "name": "兼职",
+                "name": "Part-time job",
                 "type": "income",
               },
               "cid": "11",
@@ -64,13 +64,13 @@ ShallowWrapper {
               "monthCategory": "2018-8",
               "price": 1000,
               "timestamp": 1533945600000,
-              "title": "理财收入",
+              "title": "Income from finance plan",
             },
             Object {
               "category": Object {
                 "iconName": "logo-yen",
                 "id": "12",
-                "name": "理财",
+                "name": "Finance plan",
                 "type": "income",
               },
               "cid": "12",
@@ -79,13 +79,13 @@ ShallowWrapper {
               "monthCategory": "2018-11",
               "price": 300,
               "timestamp": 1534291200000,
-              "title": "理财收入",
+              "title": "Income from finance plan",
             },
             Object {
               "category": Object {
                 "iconName": "ios-basket",
                 "id": "3",
-                "name": "购物",
+                "name": "Shopping",
                 "type": "outcome",
               },
               "cid": "3",
@@ -94,7 +94,7 @@ ShallowWrapper {
               "monthCategory": "2018-11",
               "price": 300,
               "timestamp": 1534291200000,
-              "title": "请别人吃饭",
+              "title": "Invite friends",
             },
           ]
     }
@@ -116,7 +116,8 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <li
-          className="list-group-item d-flex  justify-content-between align-items-center"
+          className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
           <span
                     className="col-1"
@@ -147,7 +148,7 @@ ShallowWrapper {
           >
                     -
                     100
-                    元
+                    Yuan
           </span>
           <span
                     className="col-2"
@@ -198,7 +199,8 @@ ShallowWrapper {
           </a>
 </li>,
         <li
-          className="list-group-item d-flex  justify-content-between align-items-center"
+          className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
           <span
                     className="col-1"
@@ -222,14 +224,14 @@ ShallowWrapper {
           <span
                     className="col-5"
           >
-                    这是我的工资
+                    This is my salary
           </span>
           <span
                     className="col-2 font-weight-bold"
           >
                     -
                     20000
-                    元
+                    Yuan
           </span>
           <span
                     className="col-2"
@@ -280,7 +282,8 @@ ShallowWrapper {
           </a>
 </li>,
         <li
-          className="list-group-item d-flex  justify-content-between align-items-center"
+          className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
           <span
                     className="col-1"
@@ -304,14 +307,14 @@ ShallowWrapper {
           <span
                     className="col-5"
           >
-                    和哥们一起喝酒
+                    Dinner with friends
           </span>
           <span
                     className="col-2 font-weight-bold"
           >
                     -
                     300
-                    元
+                    Yuan
           </span>
           <span
                     className="col-2"
@@ -362,7 +365,8 @@ ShallowWrapper {
           </a>
 </li>,
         <li
-          className="list-group-item d-flex  justify-content-between align-items-center"
+          className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
           <span
                     className="col-1"
@@ -386,14 +390,14 @@ ShallowWrapper {
           <span
                     className="col-5"
           >
-                    理财收入
+                    Income from finance plan
           </span>
           <span
                     className="col-2 font-weight-bold"
           >
                     +
                     1000
-                    元
+                    Yuan
           </span>
           <span
                     className="col-2"
@@ -444,7 +448,8 @@ ShallowWrapper {
           </a>
 </li>,
         <li
-          className="list-group-item d-flex  justify-content-between align-items-center"
+          className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
           <span
                     className="col-1"
@@ -468,14 +473,14 @@ ShallowWrapper {
           <span
                     className="col-5"
           >
-                    理财收入
+                    Income from finance plan
           </span>
           <span
                     className="col-2 font-weight-bold"
           >
                     +
                     300
-                    元
+                    Yuan
           </span>
           <span
                     className="col-2"
@@ -526,7 +531,8 @@ ShallowWrapper {
           </a>
 </li>,
         <li
-          className="list-group-item d-flex  justify-content-between align-items-center"
+          className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
           <span
                     className="col-1"
@@ -550,14 +556,14 @@ ShallowWrapper {
           <span
                     className="col-5"
           >
-                    请别人吃饭
+                    Invite friends
           </span>
           <span
                     className="col-2 font-weight-bold"
           >
                     -
                     300
-                    元
+                    Yuan
           </span>
           <span
                     className="col-2"
@@ -647,7 +653,7 @@ ShallowWrapper {
 >
               -
               100
-              元
+              Yuan
 </span>,
             <span
               className="col-2"
@@ -697,7 +703,8 @@ ShallowWrapper {
               />
 </a>,
           ],
-          "className": "list-group-item d-flex  justify-content-between align-items-center",
+          "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
         },
         "ref": null,
         "rendered": Array [
@@ -767,7 +774,7 @@ ShallowWrapper {
               "children": Array [
                 "-",
                 100,
-                "元",
+                "Yuan",
               ],
               "className": "col-2 font-weight-bold",
             },
@@ -775,7 +782,7 @@ ShallowWrapper {
             "rendered": Array [
               "-",
               100,
-              "元",
+              "Yuan",
             ],
             "type": "span",
           },
@@ -918,14 +925,14 @@ ShallowWrapper {
             <span
               className="col-5"
 >
-              这是我的工资
+              This is my salary
 </span>,
             <span
               className="col-2 font-weight-bold"
 >
               -
               20000
-              元
+              Yuan
 </span>,
             <span
               className="col-2"
@@ -975,7 +982,8 @@ ShallowWrapper {
               />
 </a>,
           ],
-          "className": "list-group-item d-flex  justify-content-between align-items-center",
+          "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
         },
         "ref": null,
         "rendered": Array [
@@ -1030,11 +1038,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "这是我的工资",
+              "children": "This is my salary",
               "className": "col-5",
             },
             "ref": null,
-            "rendered": "这是我的工资",
+            "rendered": "This is my salary",
             "type": "span",
           },
           Object {
@@ -1045,7 +1053,7 @@ ShallowWrapper {
               "children": Array [
                 "-",
                 20000,
-                "元",
+                "Yuan",
               ],
               "className": "col-2 font-weight-bold",
             },
@@ -1053,7 +1061,7 @@ ShallowWrapper {
             "rendered": Array [
               "-",
               20000,
-              "元",
+              "Yuan",
             ],
             "type": "span",
           },
@@ -1196,14 +1204,14 @@ ShallowWrapper {
             <span
               className="col-5"
 >
-              和哥们一起喝酒
+              Dinner with friends
 </span>,
             <span
               className="col-2 font-weight-bold"
 >
               -
               300
-              元
+              Yuan
 </span>,
             <span
               className="col-2"
@@ -1253,7 +1261,8 @@ ShallowWrapper {
               />
 </a>,
           ],
-          "className": "list-group-item d-flex  justify-content-between align-items-center",
+          "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
         },
         "ref": null,
         "rendered": Array [
@@ -1308,11 +1317,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "和哥们一起喝酒",
+              "children": "Dinner with friends",
               "className": "col-5",
             },
             "ref": null,
-            "rendered": "和哥们一起喝酒",
+            "rendered": "Dinner with friends",
             "type": "span",
           },
           Object {
@@ -1323,7 +1332,7 @@ ShallowWrapper {
               "children": Array [
                 "-",
                 300,
-                "元",
+                "Yuan",
               ],
               "className": "col-2 font-weight-bold",
             },
@@ -1331,7 +1340,7 @@ ShallowWrapper {
             "rendered": Array [
               "-",
               300,
-              "元",
+              "Yuan",
             ],
             "type": "span",
           },
@@ -1474,14 +1483,14 @@ ShallowWrapper {
             <span
               className="col-5"
 >
-              理财收入
+              Income from finance plan
 </span>,
             <span
               className="col-2 font-weight-bold"
 >
               +
               1000
-              元
+              Yuan
 </span>,
             <span
               className="col-2"
@@ -1531,7 +1540,8 @@ ShallowWrapper {
               />
 </a>,
           ],
-          "className": "list-group-item d-flex  justify-content-between align-items-center",
+          "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
         },
         "ref": null,
         "rendered": Array [
@@ -1586,11 +1596,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "理财收入",
+              "children": "Income from finance plan",
               "className": "col-5",
             },
             "ref": null,
-            "rendered": "理财收入",
+            "rendered": "Income from finance plan",
             "type": "span",
           },
           Object {
@@ -1601,7 +1611,7 @@ ShallowWrapper {
               "children": Array [
                 "+",
                 1000,
-                "元",
+                "Yuan",
               ],
               "className": "col-2 font-weight-bold",
             },
@@ -1609,7 +1619,7 @@ ShallowWrapper {
             "rendered": Array [
               "+",
               1000,
-              "元",
+              "Yuan",
             ],
             "type": "span",
           },
@@ -1752,14 +1762,14 @@ ShallowWrapper {
             <span
               className="col-5"
 >
-              理财收入
+              Income from finance plan
 </span>,
             <span
               className="col-2 font-weight-bold"
 >
               +
               300
-              元
+              Yuan
 </span>,
             <span
               className="col-2"
@@ -1809,7 +1819,8 @@ ShallowWrapper {
               />
 </a>,
           ],
-          "className": "list-group-item d-flex  justify-content-between align-items-center",
+          "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
         },
         "ref": null,
         "rendered": Array [
@@ -1864,11 +1875,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "理财收入",
+              "children": "Income from finance plan",
               "className": "col-5",
             },
             "ref": null,
-            "rendered": "理财收入",
+            "rendered": "Income from finance plan",
             "type": "span",
           },
           Object {
@@ -1879,7 +1890,7 @@ ShallowWrapper {
               "children": Array [
                 "+",
                 300,
-                "元",
+                "Yuan",
               ],
               "className": "col-2 font-weight-bold",
             },
@@ -1887,7 +1898,7 @@ ShallowWrapper {
             "rendered": Array [
               "+",
               300,
-              "元",
+              "Yuan",
             ],
             "type": "span",
           },
@@ -2030,14 +2041,14 @@ ShallowWrapper {
             <span
               className="col-5"
 >
-              请别人吃饭
+              Invite friends
 </span>,
             <span
               className="col-2 font-weight-bold"
 >
               -
               300
-              元
+              Yuan
 </span>,
             <span
               className="col-2"
@@ -2087,7 +2098,8 @@ ShallowWrapper {
               />
 </a>,
           ],
-          "className": "list-group-item d-flex  justify-content-between align-items-center",
+          "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
         },
         "ref": null,
         "rendered": Array [
@@ -2142,11 +2154,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "请别人吃饭",
+              "children": "Invite friends",
               "className": "col-5",
             },
             "ref": null,
-            "rendered": "请别人吃饭",
+            "rendered": "Invite friends",
             "type": "span",
           },
           Object {
@@ -2157,7 +2169,7 @@ ShallowWrapper {
               "children": Array [
                 "-",
                 300,
-                "元",
+                "Yuan",
               ],
               "className": "col-2 font-weight-bold",
             },
@@ -2165,7 +2177,7 @@ ShallowWrapper {
             "rendered": Array [
               "-",
               300,
-              "元",
+              "Yuan",
             ],
             "type": "span",
           },
@@ -2291,7 +2303,8 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <li
-            className="list-group-item d-flex  justify-content-between align-items-center"
+            className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
             <span
                         className="col-1"
@@ -2322,7 +2335,7 @@ ShallowWrapper {
             >
                         -
                         100
-                        元
+                        Yuan
             </span>
             <span
                         className="col-2"
@@ -2373,7 +2386,8 @@ ShallowWrapper {
             </a>
 </li>,
           <li
-            className="list-group-item d-flex  justify-content-between align-items-center"
+            className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
             <span
                         className="col-1"
@@ -2397,14 +2411,14 @@ ShallowWrapper {
             <span
                         className="col-5"
             >
-                        这是我的工资
+                        This is my salary
             </span>
             <span
                         className="col-2 font-weight-bold"
             >
                         -
                         20000
-                        元
+                        Yuan
             </span>
             <span
                         className="col-2"
@@ -2455,7 +2469,8 @@ ShallowWrapper {
             </a>
 </li>,
           <li
-            className="list-group-item d-flex  justify-content-between align-items-center"
+            className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
             <span
                         className="col-1"
@@ -2479,14 +2494,14 @@ ShallowWrapper {
             <span
                         className="col-5"
             >
-                        和哥们一起喝酒
+                        Dinner with friends
             </span>
             <span
                         className="col-2 font-weight-bold"
             >
                         -
                         300
-                        元
+                        Yuan
             </span>
             <span
                         className="col-2"
@@ -2537,7 +2552,8 @@ ShallowWrapper {
             </a>
 </li>,
           <li
-            className="list-group-item d-flex  justify-content-between align-items-center"
+            className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
             <span
                         className="col-1"
@@ -2561,14 +2577,14 @@ ShallowWrapper {
             <span
                         className="col-5"
             >
-                        理财收入
+                        Income from finance plan
             </span>
             <span
                         className="col-2 font-weight-bold"
             >
                         +
                         1000
-                        元
+                        Yuan
             </span>
             <span
                         className="col-2"
@@ -2619,7 +2635,8 @@ ShallowWrapper {
             </a>
 </li>,
           <li
-            className="list-group-item d-flex  justify-content-between align-items-center"
+            className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
             <span
                         className="col-1"
@@ -2643,14 +2660,14 @@ ShallowWrapper {
             <span
                         className="col-5"
             >
-                        理财收入
+                        Income from finance plan
             </span>
             <span
                         className="col-2 font-weight-bold"
             >
                         +
                         300
-                        元
+                        Yuan
             </span>
             <span
                         className="col-2"
@@ -2701,7 +2718,8 @@ ShallowWrapper {
             </a>
 </li>,
           <li
-            className="list-group-item d-flex  justify-content-between align-items-center"
+            className="list-group-item d-flex 
+ justify-content-between align-items-center"
 >
             <span
                         className="col-1"
@@ -2725,14 +2743,14 @@ ShallowWrapper {
             <span
                         className="col-5"
             >
-                        请别人吃饭
+                        Invite friends
             </span>
             <span
                         className="col-2 font-weight-bold"
             >
                         -
                         300
-                        元
+                        Yuan
             </span>
             <span
                         className="col-2"
@@ -2822,7 +2840,7 @@ ShallowWrapper {
 >
                 -
                 100
-                元
+                Yuan
 </span>,
               <span
                 className="col-2"
@@ -2872,7 +2890,8 @@ ShallowWrapper {
                 />
 </a>,
             ],
-            "className": "list-group-item d-flex  justify-content-between align-items-center",
+            "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
           },
           "ref": null,
           "rendered": Array [
@@ -2942,7 +2961,7 @@ ShallowWrapper {
                 "children": Array [
                   "-",
                   100,
-                  "元",
+                  "Yuan",
                 ],
                 "className": "col-2 font-weight-bold",
               },
@@ -2950,7 +2969,7 @@ ShallowWrapper {
               "rendered": Array [
                 "-",
                 100,
-                "元",
+                "Yuan",
               ],
               "type": "span",
             },
@@ -3093,14 +3112,14 @@ ShallowWrapper {
               <span
                 className="col-5"
 >
-                这是我的工资
+                This is my salary
 </span>,
               <span
                 className="col-2 font-weight-bold"
 >
                 -
                 20000
-                元
+                Yuan
 </span>,
               <span
                 className="col-2"
@@ -3150,7 +3169,8 @@ ShallowWrapper {
                 />
 </a>,
             ],
-            "className": "list-group-item d-flex  justify-content-between align-items-center",
+            "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
           },
           "ref": null,
           "rendered": Array [
@@ -3205,11 +3225,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "这是我的工资",
+                "children": "This is my salary",
                 "className": "col-5",
               },
               "ref": null,
-              "rendered": "这是我的工资",
+              "rendered": "This is my salary",
               "type": "span",
             },
             Object {
@@ -3220,7 +3240,7 @@ ShallowWrapper {
                 "children": Array [
                   "-",
                   20000,
-                  "元",
+                  "Yuan",
                 ],
                 "className": "col-2 font-weight-bold",
               },
@@ -3228,7 +3248,7 @@ ShallowWrapper {
               "rendered": Array [
                 "-",
                 20000,
-                "元",
+                "Yuan",
               ],
               "type": "span",
             },
@@ -3371,14 +3391,14 @@ ShallowWrapper {
               <span
                 className="col-5"
 >
-                和哥们一起喝酒
+                Dinner with friends
 </span>,
               <span
                 className="col-2 font-weight-bold"
 >
                 -
                 300
-                元
+                Yuan
 </span>,
               <span
                 className="col-2"
@@ -3428,7 +3448,8 @@ ShallowWrapper {
                 />
 </a>,
             ],
-            "className": "list-group-item d-flex  justify-content-between align-items-center",
+            "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
           },
           "ref": null,
           "rendered": Array [
@@ -3483,11 +3504,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "和哥们一起喝酒",
+                "children": "Dinner with friends",
                 "className": "col-5",
               },
               "ref": null,
-              "rendered": "和哥们一起喝酒",
+              "rendered": "Dinner with friends",
               "type": "span",
             },
             Object {
@@ -3498,7 +3519,7 @@ ShallowWrapper {
                 "children": Array [
                   "-",
                   300,
-                  "元",
+                  "Yuan",
                 ],
                 "className": "col-2 font-weight-bold",
               },
@@ -3506,7 +3527,7 @@ ShallowWrapper {
               "rendered": Array [
                 "-",
                 300,
-                "元",
+                "Yuan",
               ],
               "type": "span",
             },
@@ -3649,14 +3670,14 @@ ShallowWrapper {
               <span
                 className="col-5"
 >
-                理财收入
+                Income from finance plan
 </span>,
               <span
                 className="col-2 font-weight-bold"
 >
                 +
                 1000
-                元
+                Yuan
 </span>,
               <span
                 className="col-2"
@@ -3706,7 +3727,8 @@ ShallowWrapper {
                 />
 </a>,
             ],
-            "className": "list-group-item d-flex  justify-content-between align-items-center",
+            "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
           },
           "ref": null,
           "rendered": Array [
@@ -3761,11 +3783,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "理财收入",
+                "children": "Income from finance plan",
                 "className": "col-5",
               },
               "ref": null,
-              "rendered": "理财收入",
+              "rendered": "Income from finance plan",
               "type": "span",
             },
             Object {
@@ -3776,7 +3798,7 @@ ShallowWrapper {
                 "children": Array [
                   "+",
                   1000,
-                  "元",
+                  "Yuan",
                 ],
                 "className": "col-2 font-weight-bold",
               },
@@ -3784,7 +3806,7 @@ ShallowWrapper {
               "rendered": Array [
                 "+",
                 1000,
-                "元",
+                "Yuan",
               ],
               "type": "span",
             },
@@ -3927,14 +3949,14 @@ ShallowWrapper {
               <span
                 className="col-5"
 >
-                理财收入
+                Income from finance plan
 </span>,
               <span
                 className="col-2 font-weight-bold"
 >
                 +
                 300
-                元
+                Yuan
 </span>,
               <span
                 className="col-2"
@@ -3984,7 +4006,8 @@ ShallowWrapper {
                 />
 </a>,
             ],
-            "className": "list-group-item d-flex  justify-content-between align-items-center",
+            "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
           },
           "ref": null,
           "rendered": Array [
@@ -4039,11 +4062,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "理财收入",
+                "children": "Income from finance plan",
                 "className": "col-5",
               },
               "ref": null,
-              "rendered": "理财收入",
+              "rendered": "Income from finance plan",
               "type": "span",
             },
             Object {
@@ -4054,7 +4077,7 @@ ShallowWrapper {
                 "children": Array [
                   "+",
                   300,
-                  "元",
+                  "Yuan",
                 ],
                 "className": "col-2 font-weight-bold",
               },
@@ -4062,7 +4085,7 @@ ShallowWrapper {
               "rendered": Array [
                 "+",
                 300,
-                "元",
+                "Yuan",
               ],
               "type": "span",
             },
@@ -4205,14 +4228,14 @@ ShallowWrapper {
               <span
                 className="col-5"
 >
-                请别人吃饭
+                Invite friends
 </span>,
               <span
                 className="col-2 font-weight-bold"
 >
                 -
                 300
-                元
+                Yuan
 </span>,
               <span
                 className="col-2"
@@ -4262,7 +4285,8 @@ ShallowWrapper {
                 />
 </a>,
             ],
-            "className": "list-group-item d-flex  justify-content-between align-items-center",
+            "className": "list-group-item d-flex 
+ justify-content-between align-items-center",
           },
           "ref": null,
           "rendered": Array [
@@ -4317,11 +4341,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "请别人吃饭",
+                "children": "Invite friends",
                 "className": "col-5",
               },
               "ref": null,
-              "rendered": "请别人吃饭",
+              "rendered": "Invite friends",
               "type": "span",
             },
             Object {
@@ -4332,7 +4356,7 @@ ShallowWrapper {
                 "children": Array [
                   "-",
                   300,
-                  "元",
+                  "Yuan",
                 ],
                 "className": "col-2 font-weight-bold",
               },
@@ -4340,7 +4364,7 @@ ShallowWrapper {
               "rendered": Array [
                 "-",
                 300,
-                "元",
+                "Yuan",
               ],
               "type": "span",
             },

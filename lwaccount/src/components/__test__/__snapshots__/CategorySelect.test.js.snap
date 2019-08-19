@@ -9,19 +9,19 @@ ShallowWrapper {
             Object {
               "iconName": "ios-plane",
               "id": "1",
-              "name": "旅行",
+              "name": "Travel",
               "type": "outcome",
             },
             Object {
               "iconName": "logo-yen",
               "id": "2",
-              "name": "理财",
+              "name": "Finance Plan",
               "type": "income",
             },
             Object {
               "iconName": "logo-yen",
               "id": "3",
-              "name": "理财",
+              "name": "Finance Plan",
               "type": "income",
             },
           ]
@@ -31,7 +31,7 @@ ShallowWrapper {
         Object {
             "iconName": "ios-plane",
             "id": "1",
-            "name": "旅行",
+            "name": "Travel",
             "type": "outcome",
           }
     }
@@ -78,7 +78,7 @@ ShallowWrapper {
                         }
                 />
                 <p>
-                        旅行
+                        Travel
                 </p>
         </div>
         <div
@@ -107,7 +107,7 @@ ShallowWrapper {
                         }
                 />
                 <p>
-                        理财
+                        Finance Plan
                 </p>
         </div>
         <div
@@ -136,7 +136,7 @@ ShallowWrapper {
                         }
                 />
                 <p>
-                        理财
+                        Finance Plan
                 </p>
         </div>
 </div>,
@@ -175,7 +175,7 @@ ShallowWrapper {
                         }
             />
             <p>
-                        旅行
+                        Travel
             </p>
 </div>,
           <div
@@ -204,7 +204,7 @@ ShallowWrapper {
                         }
             />
             <p>
-                        理财
+                        Finance Plan
             </p>
 </div>,
           <div
@@ -233,7 +233,7 @@ ShallowWrapper {
                         }
             />
             <p>
-                        理财
+                        Finance Plan
             </p>
 </div>,
         ],
@@ -263,7 +263,7 @@ ShallowWrapper {
                 }
 />,
               <p>
-                旅行
+                Travel
 </p>,
             ],
             "className": "category-item col-3 active",
@@ -301,10 +301,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "旅行",
+                "children": "Travel",
               },
               "ref": null,
-              "rendered": "旅行",
+              "rendered": "Travel",
               "type": "p",
             },
           ],
@@ -332,7 +332,7 @@ ShallowWrapper {
                 }
 />,
               <p>
-                理财
+                Finance Plan
 </p>,
             ],
             "className": "category-item col-3",
@@ -370,10 +370,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "理财",
+                "children": "Finance Plan",
               },
               "ref": null,
-              "rendered": "理财",
+              "rendered": "Finance Plan",
               "type": "p",
             },
           ],
@@ -401,7 +401,7 @@ ShallowWrapper {
                 }
 />,
               <p>
-                理财
+                Finance Plan
 </p>,
             ],
             "className": "category-item col-3",
@@ -439,10 +439,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "理财",
+                "children": "Finance Plan",
               },
               "ref": null,
-              "rendered": "理财",
+              "rendered": "Finance Plan",
               "type": "p",
             },
           ],
@@ -488,7 +488,7 @@ ShallowWrapper {
                               }
                     />
                     <p>
-                              旅行
+                              Travel
                     </p>
           </div>
           <div
@@ -517,7 +517,7 @@ ShallowWrapper {
                               }
                     />
                     <p>
-                              理财
+                              Finance Plan
                     </p>
           </div>
           <div
@@ -546,7 +546,7 @@ ShallowWrapper {
                               }
                     />
                     <p>
-                              理财
+                              Finance Plan
                     </p>
           </div>
 </div>,
@@ -585,7 +585,7 @@ ShallowWrapper {
                             }
               />
               <p>
-                            旅行
+                            Travel
               </p>
 </div>,
             <div
@@ -614,7 +614,7 @@ ShallowWrapper {
                             }
               />
               <p>
-                            理财
+                            Finance Plan
               </p>
 </div>,
             <div
@@ -643,7 +643,7 @@ ShallowWrapper {
                             }
               />
               <p>
-                            理财
+                            Finance Plan
               </p>
 </div>,
           ],
@@ -673,7 +673,7 @@ ShallowWrapper {
                   }
 />,
                 <p>
-                  旅行
+                  Travel
 </p>,
               ],
               "className": "category-item col-3 active",
@@ -711,10 +711,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "旅行",
+                  "children": "Travel",
                 },
                 "ref": null,
-                "rendered": "旅行",
+                "rendered": "Travel",
                 "type": "p",
               },
             ],
@@ -742,7 +742,7 @@ ShallowWrapper {
                   }
 />,
                 <p>
-                  理财
+                  Finance Plan
 </p>,
               ],
               "className": "category-item col-3",
@@ -780,10 +780,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "理财",
+                  "children": "Finance Plan",
                 },
                 "ref": null,
-                "rendered": "理财",
+                "rendered": "Finance Plan",
                 "type": "p",
               },
             ],
@@ -811,7 +811,7 @@ ShallowWrapper {
                   }
 />,
                 <p>
-                  理财
+                  Finance Plan
 </p>,
               ],
               "className": "category-item col-3",
@@ -849,10 +849,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "理财",
+                  "children": "Finance Plan",
                 },
                 "ref": null,
-                "rendered": "理财",
+                "rendered": "Finance Plan",
                 "type": "p",
               },
             ],
