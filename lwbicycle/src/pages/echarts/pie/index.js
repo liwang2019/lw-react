@@ -2,9 +2,7 @@ import React from 'react'
 import { Card } from 'antd'
 import echartTheme from './../themeLight'
 // import echarts from 'echarts'
-//按需加载
 import echarts from 'echarts/lib/echarts'
-// 导入饼图
 import 'echarts/lib/chart/pie'
 import 'echarts/lib/component/tooltip'
 import 'echarts/lib/component/title'
@@ -19,53 +17,53 @@ export default class Bar extends React.Component {
 
     getOption = () => {
         let option = {
-            title:{
-                text: '用户骑行订单',
-                x:'center'
+            title: {
+                text: 'Order',
+                x: 'center'
             },
-            legend:{
-                orient:'vertical',
-                right:10,
-                top:20,
-                bottom:20,
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+            legend: {
+                orient: 'vertical',
+                right: 10,
+                top: 20,
+                bottom: 20,
+                data: ['Mondy', 'Tuesday', 'Wendnesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
             },
-            tooltip:{
-                trigger:'item',
-                formatter:'{a}<br/>{b}:{c}({d}%)'
+            tooltip: {
+                trigger: 'item',
+                formatter: '{a}<br/>{b}:{c}({d}%)'
             },
-            series:[
+            series: [
                 {
-                    name:'订单量',
-                    type:'pie',
-                    data:[
+                    name: 'Order amount',
+                    type: 'pie',
+                    data: [
                         {
-                            value:1000,
-                            name:'周一'
+                            value: 1000,
+                            name: 'Mondy'
                         },
                         {
                             value: 1000,
-                            name: '周二'
-                        },
-                        {
-                            value:2000,
-                            name:'周三'
-                        },
-                        {
-                            value: 1500,
-                            name: '周四'
-                        },
-                        {
-                            value: 3000,
-                            name: '周五'
+                            name: 'Tuesday'
                         },
                         {
                             value: 2000,
-                            name: '周六'
+                            name: 'Wendnesday'
+                        },
+                        {
+                            value: 1500,
+                            name: 'Thursday'
+                        },
+                        {
+                            value: 3000,
+                            name: 'Friday'
+                        },
+                        {
+                            value: 2000,
+                            name: 'Saturday'
                         },
                         {
                             value: 1200,
-                            name: '周日'
+                            name: 'Sunday'
                         }
                     ]
                 }
@@ -77,7 +75,7 @@ export default class Bar extends React.Component {
     getOption2 = () => {
         let option = {
             title: {
-                text: '用户骑行订单',
+                text: 'Order',
                 x: 'center'
             },
             legend: {
@@ -85,7 +83,7 @@ export default class Bar extends React.Component {
                 right: 10,
                 top: 20,
                 bottom: 20,
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+                data: ['Mondy', 'Tuesday', 'Wendnesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
             },
             tooltip: {
                 trigger: 'item',
@@ -93,38 +91,38 @@ export default class Bar extends React.Component {
             },
             series: [
                 {
-                    name: '订单量',
+                    name: 'Order amount',
                     type: 'pie',
-                    radius:['50%','80%'],
-                    center:['50%','60%'],
+                    radius: ['50%', '80%'],
+                    center: ['50%', '60%'],
                     data: [
                         {
                             value: 1000,
-                            name: '周一'
+                            name: 'Mondy'
                         },
                         {
                             value: 1000,
-                            name: '周二'
+                            name: 'Tuesday'
                         },
                         {
                             value: 2000,
-                            name: '周三'
+                            name: 'Wendnesday'
                         },
                         {
                             value: 1500,
-                            name: '周四'
+                            name: 'Thursday'
                         },
                         {
                             value: 3000,
-                            name: '周五'
+                            name: 'Friday'
                         },
                         {
                             value: 2000,
-                            name: '周六'
+                            name: 'Saturday'
                         },
                         {
                             value: 1200,
-                            name: '周日'
+                            name: 'Sunday'
                         }
                     ]
                 }
@@ -136,7 +134,7 @@ export default class Bar extends React.Component {
     getOption3 = () => {
         let option = {
             title: {
-                text: '用户骑行订单',
+                text: 'Order',
                 x: 'center'
             },
             legend: {
@@ -144,7 +142,7 @@ export default class Bar extends React.Component {
                 right: 10,
                 top: 20,
                 bottom: 20,
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+                data: ['Mondy', 'Tuesday', 'Wendnesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
             },
             tooltip: {
                 trigger: 'item',
@@ -152,41 +150,41 @@ export default class Bar extends React.Component {
             },
             series: [
                 {
-                    name: '订单量',
+                    name: 'Order amount',
                     type: 'pie',
                     data: [
                         {
                             value: 1000,
-                            name: '周一'
+                            name: 'Mondy'
                         },
                         {
                             value: 1000,
-                            name: '周二'
+                            name: 'Tuesday'
                         },
                         {
                             value: 2000,
-                            name: '周三'
+                            name: 'Wendnesday'
                         },
                         {
                             value: 1500,
-                            name: '周四'
+                            name: 'Thursday'
                         },
                         {
                             value: 3000,
-                            name: '周五'
+                            name: 'Friday'
                         },
                         {
                             value: 2000,
-                            name: '周六'
+                            name: 'Saturday'
                         },
                         {
                             value: 1200,
-                            name: '周日'
+                            name: 'Sunday'
                         }
-                    ].sort((a,b)=>{
+                    ].sort((a, b) => {
                         return a.value - b.value;
                     }),
-                    roseType:'radius',
+                    roseType: 'radius',
                     animationType: 'scale',
                     animationEasing: 'elasticOut',
                     animationDelay: function (idx) {
@@ -201,13 +199,13 @@ export default class Bar extends React.Component {
     render() {
         return (
             <div>
-                <Card title="饼图表之一">
+                <Card title="Pie 1">
                     <ReactEcharts option={this.getOption()} theme="Imooc" style={{ height: 500 }} />
                 </Card>
-                <Card title="饼图表之二" style={{ marginTop: 10 }}>
+                <Card title="Pie 2" style={{ marginTop: 10 }}>
                     <ReactEcharts option={this.getOption2()} theme="Imooc" style={{ height: 500 }} />
                 </Card>
-                <Card title="饼图表之三" style={{ marginTop: 10 }}>
+                <Card title="Pie 3" style={{ marginTop: 10 }}>
                     <ReactEcharts option={this.getOption3()} theme="Imooc" style={{ height: 500 }} />
                 </Card>
             </div>

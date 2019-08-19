@@ -1,53 +1,53 @@
 import React from 'react'
-import { Input, Select, Form, Button, Checkbox, Radio, DatePicker} from 'antd'
+import { Input, Select, Form, Button, Checkbox, Radio, DatePicker } from 'antd'
 import Utils from '../../utils/utils';
 const FormItem = Form.Item;
 const Option = Select.Option;
 
-class FilterForm extends React.Component{
+class FilterForm extends React.Component {
 
-    handleFilterSubmit = ()=>{
+    handleFilterSubmit = () => {
         let fieldsValue = this.props.form.getFieldsValue();
         this.props.filterSubmit(fieldsValue);
     }
 
-    reset = ()=>{
+    reset = () => {
         this.props.form.resetFields();
     }
 
-    initFormList = ()=>{
+    initFormList = () => {
         const { getFieldDecorator } = this.props.form;
         const formList = this.props.formList;
         const formItemList = [];
-        if (formList && formList.length>0){
-            formList.forEach((item,i)=>{
+        if (formList && formList.length > 0) {
+            formList.forEach((item, i) => {
                 let label = item.label;
                 let field = item.field;
                 let initialValue = item.initialValue || '';
                 let placeholder = item.placeholder;
                 let width = item.width;
-                if (item.type == '城市') {
-                    
-                    const city = <FormItem label="城市" key={field}>
+                if (item.type == 'city') {
+
+                    const city = <FormItem label="City" key={field}>
                         {
-                            getFieldDecorator('city',{
-                                initialValue:'0'
+                            getFieldDecorator('city', {
+                                initialValue: '0'
                             })(
                                 <Select
-                                    style={{width:80}}
+                                    style={{ width: 80 }}
                                     placeholder={placeholder}
                                 >
-                                    {Utils.getOptionList([{ id: '0', name: '全部' }, { id: '1', name: '北京' }, { id: '2', name: '上海' }, { id: '3', name: '天津' }, { id: '4', name: '杭州' }])}
+                                    {Utils.getOptionList([{ id: '0', name: 'All' }, { id: '1', name: 'BeiJing' }, { id: '2', name: 'ShangHai' }, { id: '3', name: 'TianJin' }, { id: '4', name: 'HangZhou' }])}
                                 </Select>
                             )
                         }
                     </FormItem>;
                     formItemList.push(city)
-                }else if (item.type == '时间查询'){
-                    const begin_time = <FormItem label="订单时间" key={field}>
+                } else if (item.type == 'search_time') {
+                    const begin_time = <FormItem label="Order time" key={field}>
                         {
                             getFieldDecorator('begin_time')(
-                                <DatePicker showTime={true} placeholder={placeholder} format="YYYY-MM-DD HH:mm:ss"/>
+                                <DatePicker showTime={true} placeholder={placeholder} format="YYYY-MM-DD HH:mm:ss" />
                             )
                         }
                     </FormItem>;
@@ -60,10 +60,10 @@ class FilterForm extends React.Component{
                         }
                     </FormItem>;
                     formItemList.push(end_time)
-                }else if(item.type == 'INPUT'){
+                } else if (item.type == 'INPUT') {
                     const INPUT = <FormItem label={label} key={field}>
                         {
-                            getFieldDecorator([field],{
+                            getFieldDecorator([field], {
                                 initialValue: initialValue
                             })(
                                 <Input type="text" style={{ width: width }} placeholder={placeholder} />
@@ -115,13 +115,13 @@ class FilterForm extends React.Component{
         }
         return formItemList;
     }
-    render(){
+    render() {
         return (
             <Form layout="inline">
-                { this.initFormList() }
+                {this.initFormList()}
                 <FormItem>
-                    <Button type="primary" style={{ margin: '0 20px' }} onClick={this.handleFilterSubmit}>查询</Button>
-                    <Button onClick={this.reset}>重置</Button>
+                    <Button type="primary" style={{ margin: '0 20px' }} onClick={this.handleFilterSubmit}>Search</Button>
+                    <Button onClick={this.reset}>Reset</Button>
                 </FormItem>
             </Form>
         );

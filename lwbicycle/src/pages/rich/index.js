@@ -1,34 +1,34 @@
 import React from 'react'
-import { Card,Button,Modal } from 'antd'
+import { Card, Button, Modal } from 'antd'
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import draftjs from 'draftjs-to-html';
 export default class RichText extends React.Component {
 
     state = {
-        showRichText:false,
-        editorState:''
+        showRichText: false,
+        editorState: ''
     }
 
-    handleClearContent = ()=>{
+    handleClearContent = () => {
         this.setState({
-            editorState:''
+            editorState: ''
         });
     }
 
     handleGetText = () => {
         this.setState({
-            showRichText:true
+            showRichText: true
         });
     }
 
-    onEditorChange = (contentState)=>{
+    onEditorChange = (contentState) => {
         this.setState({
             contentState
         });
     }
 
-    onEditorStateChange = (editorState)=>{
+    onEditorStateChange = (editorState) => {
         this.setState({
             editorState,
         });
@@ -38,10 +38,10 @@ export default class RichText extends React.Component {
         return (
             <div>
                 <Card>
-                    <Button type="primary" onClick={this.handleClearContent} style={{marginRight:10}}>清空内容</Button>
-                    <Button type="primary" onClick={this.handleGetText}>获取HTML文本</Button>
+                    <Button type="primary" onClick={this.handleClearContent} style={{ marginRight: 10 }}>Clear content</Button>
+                    <Button type="primary" onClick={this.handleGetText}>Get HTML</Button>
                 </Card>
-                <Card title="富文本编辑器">
+                <Card title="Richtext Editor">
                     <Editor
                         editorState={editorState}
                         onContentStateChange={this.onEditorChange}
@@ -49,11 +49,11 @@ export default class RichText extends React.Component {
                     />
                 </Card>
                 <Modal
-                    title="富文本"
+                    title="Richtext"
                     visible={this.state.showRichText}
-                    onCancel={()=>{
+                    onCancel={() => {
                         this.setState({
-                            showRichText:false
+                            showRichText: false
                         })
                     }}
                     footer={null}

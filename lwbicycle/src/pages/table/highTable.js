@@ -8,13 +8,12 @@ export default class BasicTable extends React.Component {
 
     }
     params = {
-        page:1
+        page: 1
     }
-    componentDidMount(){
+    componentDidMount() {
         this.request();
     }
 
-    // 动态获取mock数据
     request = () => {
         let _this = this;
         axios.ajax({
@@ -36,98 +35,97 @@ export default class BasicTable extends React.Component {
         })
     }
 
-    handleChange = (pagination, filters, sorter)=>{
+    handleChange = (pagination, filters, sorter) => {
         console.log("::" + sorter)
         this.setState({
-            sortOrder:sorter.order
+            sortOrder: sorter.order
         })
     }
 
-    // 删除操作
-    handleDelete = (item)=>{
+    handleDelete = (item) => {
         let id = item.id;
         Modal.confirm({
-            title:'确认',
-            content:'您确认要删除此条数据吗？',
-            onOk:()=>{
-                message.success('删除成功');
+            title: 'Confirmation',
+            content: 'Are you sure to delete this data?',
+            onOk: () => {
+                message.success('Delete succeed');
                 this.request();
             }
         })
     }
 
-    render(){
+    render() {
         const columns = [
             {
                 title: 'id',
                 key: 'id',
-                width:80,
+                width: 80,
                 dataIndex: 'id'
             },
             {
-                title: '用户名',
+                title: 'User name',
                 key: 'userName',
                 width: 80,
                 dataIndex: 'userName'
             },
             {
-                title: '性别',
+                title: 'Sex',
                 key: 'sex',
                 width: 80,
                 dataIndex: 'sex',
                 render(sex) {
-                    return sex == 1 ? '男' : '女'
+                    return sex == 1 ? 'Male' : 'Female'
                 }
             },
             {
-                title: '状态',
+                title: 'Status',
                 key: 'state',
                 width: 80,
                 dataIndex: 'state',
                 render(state) {
                     let config = {
-                        '1': '咸鱼一条',
-                        '2': '风华浪子',
-                        '3': '北大才子',
-                        '4': '百度FE',
-                        '5': '创业者'
+                        '1': 'Just graduated',
+                        '2': 'Employed',
+                        '3': 'Master',
+                        '4': 'Frontend Developer',
+                        '5': 'Entrepreneur'
                     }
                     return config[state];
                 }
             },
             {
-                title: '爱好',
+                title: 'Hobby',
                 key: 'interest',
                 width: 80,
                 dataIndex: 'interest',
                 render(abc) {
                     let config = {
-                        '1': '游泳',
-                        '2': '打篮球',
-                        '3': '踢足球',
-                        '4': '跑步',
-                        '5': '爬山',
-                        '6': '骑行',
-                        '7': '桌球',
-                        '8': '麦霸'
+                        '1': 'Swimming',
+                        '2': 'Basketbal',
+                        '3': 'Football',
+                        '4': 'Running',
+                        '5': 'Climbing mountains',
+                        '6': 'Riding',
+                        '7': 'Table tennis',
+                        '8': 'Karaoke'
                     }
                     return config[abc];
                 }
             },
             {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             },
             {
-                title: '地址',
+                title: 'Address',
                 key: 'address',
                 width: 120,
                 dataIndex: 'address'
             },
             {
-                title: '早起时间',
+                title: 'Time to get up',
                 key: 'time',
                 width: 80,
                 dataIndex: 'time'
@@ -138,156 +136,156 @@ export default class BasicTable extends React.Component {
                 title: 'id',
                 key: 'id',
                 width: 80,
-                fixed:'left',
+                fixed: 'left',
                 dataIndex: 'id'
             },
             {
-                title: '用户名',
+                title: 'User name',
                 key: 'userName',
                 width: 80,
                 fixed: 'left',
                 dataIndex: 'userName'
             },
             {
-                title: '性别',
+                title: 'Sex',
                 key: 'sex',
                 width: 80,
                 dataIndex: 'sex',
                 render(sex) {
-                    return sex == 1 ? '男' : '女'
+                    return sex == 1 ? 'Male' : 'Female'
                 }
             },
             {
-                title: '状态',
+                title: 'Status',
                 key: 'state',
                 width: 80,
                 dataIndex: 'state',
                 render(state) {
                     let config = {
-                        '1': '咸鱼一条',
-                        '2': '风华浪子',
-                        '3': '北大才子',
-                        '4': '百度FE',
-                        '5': '创业者'
+                        '1': 'Just graduated',
+                        '2': 'Employed',
+                        '3': 'Master',
+                        '4': 'Frontend Developer',
+                        '5': 'Entrepreneur'
                     }
                     return config[state];
                 }
             },
             {
-                title: '爱好',
+                title: 'Hobby',
                 key: 'interest',
                 width: 80,
                 dataIndex: 'interest',
                 render(abc) {
                     let config = {
-                        '1': '游泳',
-                        '2': '打篮球',
-                        '3': '踢足球',
-                        '4': '跑步',
-                        '5': '爬山',
-                        '6': '骑行',
-                        '7': '桌球',
-                        '8': '麦霸'
+                        '1': 'Swimming',
+                        '2': 'Basketbal',
+                        '3': 'Football',
+                        '4': 'Running',
+                        '5': 'Climbing mountains',
+                        '6': 'Riding',
+                        '7': 'Table tennis',
+                        '8': 'Karaoke'
                     }
                     return config[abc];
                 }
             },
             {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             },
             {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             }, {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 width: 120,
                 dataIndex: 'birthday'
             },
             {
-                title: '地址',
+                title: 'Address',
                 key: 'address',
                 width: 120,
                 fixed: 'right',
                 dataIndex: 'address'
             },
             {
-                title: '早起时间',
+                title: 'Time to get up',
                 key: 'time',
                 width: 80,
                 fixed: 'right',
@@ -301,72 +299,72 @@ export default class BasicTable extends React.Component {
                 dataIndex: 'id'
             },
             {
-                title: '用户名',
+                title: 'User name',
                 key: 'userName',
                 dataIndex: 'userName'
             },
             {
-                title: '性别',
+                title: 'Sex',
                 key: 'sex',
                 dataIndex: 'sex',
                 render(sex) {
-                    return sex == 1 ? '男' : '女'
+                    return sex == 1 ? 'Male' : 'Female'
                 }
             },
             {
-                title: '年龄',
+                title: 'Age',
                 key: 'age',
                 dataIndex: 'age',
-                sorter:(a,b)=>{
+                sorter: (a, b) => {
                     return a.age - b.age;
                 },
-                sortOrder:this.state.sortOrder
+                sortOrder: this.state.sortOrder
             },
             {
-                title: '状态',
+                title: 'Status',
                 key: 'state',
                 dataIndex: 'state',
                 render(state) {
                     let config = {
-                        '1': '咸鱼一条',
-                        '2': '风华浪子',
-                        '3': '北大才子',
-                        '4': '百度FE',
-                        '5': '创业者'
+                        '1': 'Just graduated',
+                        '2': 'Employed',
+                        '3': 'Master',
+                        '4': 'Frontend Developer',
+                        '5': 'Entrepreneur'
                     }
                     return config[state];
                 }
             },
             {
-                title: '爱好',
+                title: 'Hobby',
                 key: 'interest',
                 dataIndex: 'interest',
                 render(abc) {
                     let config = {
-                        '1': '游泳',
-                        '2': '打篮球',
-                        '3': '踢足球',
-                        '4': '跑步',
-                        '5': '爬山',
-                        '6': '骑行',
-                        '7': '桌球',
-                        '8': '麦霸'
+                        '1': 'Swimming',
+                        '2': 'Basketbal',
+                        '3': 'Football',
+                        '4': 'Running',
+                        '5': 'Climbing mountains',
+                        '6': 'Riding',
+                        '7': 'Table tennis',
+                        '8': 'Karaoke'
                     }
                     return config[abc];
                 }
             },
             {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 dataIndex: 'birthday'
             },
             {
-                title: '地址',
+                title: 'Address',
                 key: 'address',
                 dataIndex: 'address'
             },
             {
-                title: '早起时间',
+                title: 'Time to get up',
                 key: 'time',
                 dataIndex: 'time'
             }
@@ -377,75 +375,75 @@ export default class BasicTable extends React.Component {
                 dataIndex: 'id'
             },
             {
-                title: '用户名',
+                title: 'User name',
                 dataIndex: 'userName'
             },
             {
-                title: '性别',
+                title: 'Sex',
                 dataIndex: 'sex',
                 render(sex) {
-                    return sex == 1 ? '男' : '女'
+                    return sex == 1 ? 'Male' : 'Female'
                 }
             },
             {
-                title: '年龄',
+                title: 'Age',
                 dataIndex: 'age'
             },
             {
-                title: '状态',
+                title: 'Status',
                 dataIndex: 'state',
                 render(state) {
                     let config = {
-                        '1': '咸鱼一条',
-                        '2': '风华浪子',
-                        '3': '北大才子',
-                        '4': '百度FE',
-                        '5': '创业者'
+                        '1': 'Just graduated',
+                        '2': 'Employed',
+                        '3': 'Master',
+                        '4': 'Frontend Developer',
+                        '5': 'Entrepreneur'
                     }
                     return config[state];
                 }
             },
             {
-                title: '爱好',
+                title: 'Hobby',
                 dataIndex: 'interest',
                 render(abc) {
                     let config = {
-                        '1': <Badge status="success" text="成功"/>,
-                        '2': <Badge status="error" text="报错" />,
-                        '3': <Badge status="default" text="正常" />,
-                        '4': <Badge status="processing" text="进行中" />,
-                        '5': <Badge status="warning" text="警告" />
+                        '1': <Badge status="success" text="Succeed" />,
+                        '2': <Badge status="error" text="Error" />,
+                        '3': <Badge status="default" text="Nomal" />,
+                        '4': <Badge status="processing" text="In Prodess" />,
+                        '5': <Badge status="warning" text="Warning" />
                     }
                     return config[abc];
                 }
             },
             {
-                title: '生日',
+                title: 'Birthday',
                 dataIndex: 'birthday'
             },
             {
-                title: '地址',
+                title: 'Address',
                 dataIndex: 'address'
             },
             {
-                title: '操作',
-                render:(text,item)=>{
-                    return <Button size="small" onClick={(item) => { this.handleDelete(item) }}>删除</Button>
+                title: 'Operation',
+                render: (text, item) => {
+                    return <Button size="small" onClick={(item) => { this.handleDelete(item) }}>Delete</Button>
                 }
             }
         ]
         return (
             <div>
-                <Card title="头部固定">
+                <Card title="Top fixed">
                     <Table
                         bordered
                         columns={columns}
                         dataSource={this.state.dataSource}
                         pagination={false}
-                        scroll={{y:240}}
+                        scroll={{ y: 240 }}
                     />
                 </Card>
-                <Card title="左侧固定" style={{ margin: '10px 0' }}>
+                <Card title="Left side fixed" style={{ margin: '10px 0' }}>
                     <Table
                         bordered
                         columns={columns2}
@@ -454,7 +452,7 @@ export default class BasicTable extends React.Component {
                         scroll={{ x: 2650 }}
                     />
                 </Card>
-                <Card title="表格排序" style={{ margin: '10px 0' }}>
+                <Card title="Sorting" style={{ margin: '10px 0' }}>
                     <Table
                         bordered
                         columns={columns3}
@@ -463,7 +461,7 @@ export default class BasicTable extends React.Component {
                         onChange={this.handleChange}
                     />
                 </Card>
-                <Card title="操作按钮" style={{ margin: '10px 0' }}>
+                <Card title="Operation button" style={{ margin: '10px 0' }}>
                     <Table
                         bordered
                         columns={columns4}

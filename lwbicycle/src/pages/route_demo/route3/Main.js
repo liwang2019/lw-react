@@ -6,11 +6,11 @@ export default class Main extends React.Component {
         return (
             <div>
                 this is main page.
-                <br/>
-                <Link to="/main/test-id">嵌套路由1</Link>
-                <br/>
-                <Link to="/main/456">嵌套路由2</Link>
-                <hr/>
+                <br />
+                <Link to="/main/test-id">Embeded route</Link>
+                <br />
+                <Link to="/main/456">Embeded route 2</Link>
+                <hr />
                 {this.props.children}
             </div>
         );

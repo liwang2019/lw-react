@@ -2,9 +2,7 @@ import React from 'react'
 import { Card } from 'antd'
 import echartTheme from './../echartTheme'
 // import echarts from 'echarts'
-//按需加载
 import echarts from 'echarts/lib/echarts'
-// 导入饼图
 import 'echarts/lib/chart/line'
 import 'echarts/lib/component/tooltip'
 import 'echarts/lib/component/title'
@@ -20,22 +18,22 @@ export default class Line extends React.Component {
     getOption = () => {
         let option = {
             title: {
-                text: '用户骑行订单'
+                text: 'Order'
             },
             tooltip: {
                 trigger: 'axis'
             },
-            xAxis:{
-                data:[
-                    '周一', '周二', '周三', '周四', '周五', '周六', '周日'
+            xAxis: {
+                data: [
+                    'Mondy', 'Tuesday', 'Wendnesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'
                 ]
             },
-            yAxis:{
-                type:'value'
+            yAxis: {
+                type: 'value'
             },
             series: [
                 {
-                    name: '订单量',
+                    name: 'Order',
                     type: 'line',
                     data: [
                         1000,
@@ -55,17 +53,17 @@ export default class Line extends React.Component {
     getOption2 = () => {
         let option = {
             title: {
-                text: '用户骑行订单'
+                text: 'Order'
             },
             tooltip: {
                 trigger: 'axis'
             },
-            legend:{
-                data:['OFO订单量','摩拜订单量']
+            legend: {
+                data: ['OFO order amount', 'Mobile order amount']
             },
             xAxis: {
                 data: [
-                    '周一', '周二', '周三', '周四', '周五', '周六', '周日'
+                    'Mondy', 'Tuesday', 'Wendnesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'
                 ]
             },
             yAxis: {
@@ -73,7 +71,7 @@ export default class Line extends React.Component {
             },
             series: [
                 {
-                    name: 'OFO订单量',
+                    name: 'OFO order amount',
                     type: 'line',
                     data: [
                         1200,
@@ -86,7 +84,7 @@ export default class Line extends React.Component {
                     ]
                 },
                 {
-                    name: '摩拜订单量',
+                    name: 'Mobile order amount',
                     type: 'line',
                     data: [
                         1000,
@@ -106,7 +104,7 @@ export default class Line extends React.Component {
     getOption3 = () => {
         let option = {
             title: {
-                text: '用户骑行订单'
+                text: 'Order'
             },
             tooltip: {
                 trigger: 'axis'
@@ -115,7 +113,7 @@ export default class Line extends React.Component {
                 type: 'category',
                 boundaryGap: false,
                 data: [
-                    '周一', '周二', '周三', '周四', '周五', '周六', '周日'
+                    'Mondy', 'Tuesday', 'Wendnesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'
                 ]
             },
             yAxis: {
@@ -123,7 +121,7 @@ export default class Line extends React.Component {
             },
             series: [
                 {
-                    name: '订单量',
+                    name: 'Order amount',
                     type: 'line',
                     data: [
                         1000,
@@ -144,13 +142,13 @@ export default class Line extends React.Component {
     render() {
         return (
             <div>
-                <Card title="折线图表之一">
+                <Card title="Line 1">
                     <ReactEcharts option={this.getOption()} theme="Imooc" style={{ height: 500 }} />
                 </Card>
-                <Card title="折线图表之二" style={{ marginTop: 10 }}>
+                <Card title="Line 2" style={{ marginTop: 10 }}>
                     <ReactEcharts option={this.getOption2()} theme="Imooc" style={{ height: 500 }} />
                 </Card>
-                <Card title="折线图表之三" style={{ marginTop: 10 }}>
+                <Card title="Line 3" style={{ marginTop: 10 }}>
                     <ReactEcharts option={this.getOption3()} theme="Imooc" style={{ height: 500 }} />
                 </Card>
             </div>

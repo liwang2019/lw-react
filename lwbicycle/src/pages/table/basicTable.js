@@ -1,28 +1,28 @@
 import React from 'react';
-import { Card, Table, Modal, Button, message} from 'antd';
+import { Card, Table, Modal, Button, message } from 'antd';
 import axios from './../../axios/index'
 import Utils from './../../utils/utils';
-export default class BasicTable extends React.Component{
+export default class BasicTable extends React.Component {
 
-    state={
-        dataSource2:[]
+    state = {
+        dataSource2: []
     }
 
     params = {
-        page:1
+        page: 1
     }
 
-    componentDidMount(){
+    componentDidMount() {
         const data = [
             {
-                id:'0',
-                userName:'Jack',
-                sex:'1',
-                state:'1',
-                interest:'1',
-                birthday:'2000-01-01',
-                address:'北京市海淀区奥林匹克公园',
-                time:'09:00'
+                id: '0',
+                userName: 'Jack',
+                sex: '1',
+                state: '1',
+                interest: '1',
+                birthday: '2000-01-01',
+                address: 'HaiDian district, BeiJing',
+                time: '09:00'
             },
             {
                 id: '1',
@@ -31,7 +31,7 @@ export default class BasicTable extends React.Component{
                 state: '1',
                 interest: '1',
                 birthday: '2000-01-01',
-                address: '北京市海淀区奥林匹克公园',
+                address: 'HaiDian district, BeiJing',
                 time: '09:00'
             },
             {
@@ -41,11 +41,11 @@ export default class BasicTable extends React.Component{
                 state: '1',
                 interest: '1',
                 birthday: '2000-01-01',
-                address: '北京市海淀区奥林匹克公园',
+                address: 'HaiDian district, BeiJing',
                 time: '09:00'
             },
         ]
-        data.map((item,index)=>{
+        data.map((item, index) => {
             item.key = index;
         })
         this.setState({
@@ -54,26 +54,25 @@ export default class BasicTable extends React.Component{
         this.request();
     }
 
-    // 动态获取mock数据
-    request = ()=>{
+    request = () => {
         let _this = this;
         axios.ajax({
-            url:'/table/list',
-            data:{
-                params:{
-                    page:this.params.page
+            url: '/table/list',
+            data: {
+                params: {
+                    page: this.params.page
                 }
             }
-        }).then((res)=>{
-            if(res.code == 0){
+        }).then((res) => {
+            if (res.code == 0) {
                 res.result.list.map((item, index) => {
                     item.key = index;
                 })
                 this.setState({
-                    dataSource2:res.result.list,
-                    selectedRowKeys:[],
-                    selectedRows:null,
-                    pagination: Utils.pagination(res,(current)=>{
+                    dataSource2: res.result.list,
+                    selectedRowKeys: [],
+                    selectedRows: null,
+                    pagination: Utils.pagination(res, (current) => {
                         _this.params.page = current;
                         this.request();
                     })
@@ -82,113 +81,112 @@ export default class BasicTable extends React.Component{
         })
     }
 
-    onRowClick = (record,index)=>{
+    onRowClick = (record, index) => {
         let selectKey = [index];
         Modal.info({
-            title:'信息',
-            content:`用户名：${record.userName},用户爱好：${record.interest}`
+            title: 'Information',
+            content: `User name：${record.userName},user hobby：${record.interest}`
         })
         this.setState({
-            selectedRowKeys:selectKey,
+            selectedRowKeys: selectKey,
             selectedItem: record
         })
     }
 
-    // 多选执行删除动作
-    handleDelete = (()=>{
+    handleDelete = (() => {
         let rows = this.state.selectedRows;
         let ids = [];
-        rows.map((item)=>{
+        rows.map((item) => {
             ids.push(item.id)
         })
         Modal.confirm({
-            title:'删除提示',
-            content: `您确定要删除这些数据吗？${ids.join(',')}`,
-            onOk:()=>{
-                message.success('删除成功');
+            title: 'Delete prompt',
+            content: `Do you really want to delete these datas?${ids.join(',')}`,
+            onOk: () => {
+                message.success('Delete succeed');
                 this.request();
             }
         })
     })
 
-    render(){
+    render() {
         const columns = [
             {
-                title:'id',
-                key:'id',
-                dataIndex:'id'
+                title: 'id',
+                key: 'id',
+                dataIndex: 'id'
             },
             {
-                title: '用户名',
+                title: 'User name',
                 key: 'userName',
                 dataIndex: 'userName'
             },
             {
-                title: '性别',
+                title: 'Sex',
                 key: 'sex',
                 dataIndex: 'sex',
-                render(sex){
-                    return sex ==1 ?'男':'女'
+                render(sex) {
+                    return sex == 1 ? 'Male' : 'Female'
                 }
             },
             {
-                title: '状态',
+                title: 'Status',
                 key: 'state',
                 dataIndex: 'state',
-                render(state){
-                    let config  = {
-                        '1':'咸鱼一条',
-                        '2':'风华浪子',
-                        '3':'北大才子',
-                        '4':'百度FE',
-                        '5':'创业者'
+                render(state) {
+                    let config = {
+                        '1': 'Just graduated',
+                        '2': 'Employed',
+                        '3': 'Master',
+                        '4': 'Frontend Developer',
+                        '5': 'Entrepreneur'
                     }
                     return config[state];
                 }
             },
             {
-                title: '爱好',
+                title: 'Hobby',
                 key: 'interest',
                 dataIndex: 'interest',
                 render(abc) {
                     let config = {
-                        '1': '游泳',
-                        '2': '打篮球',
-                        '3': '踢足球',
-                        '4': '跑步',
-                        '5': '爬山',
-                        '6': '骑行',
-                        '7': '桌球',
-                        '8': '麦霸'
+                        '1': 'Swimming',
+                        '2': 'Basketbal',
+                        '3': 'Football',
+                        '4': 'Running',
+                        '5': 'Climbing mountains',
+                        '6': 'Riding',
+                        '7': 'Table tennis',
+                        '8': 'Karaoke'
                     }
                     return config[abc];
                 }
             },
             {
-                title: '生日',
+                title: 'Birthday',
                 key: 'birthday',
                 dataIndex: 'birthday'
             },
             {
-                title: '地址',
+                title: 'Address',
                 key: 'address',
                 dataIndex: 'address'
             },
             {
-                title: '早起时间',
+                title: 'Time to get up',
                 key: 'time',
                 dataIndex: 'time'
             }
         ]
         const selectedRowKeys = this.state.selectedRowKeys;
         const rowSelection = {
-            type:'radio',
+            type: 'radio',
             selectedRowKeys
         }
         const rowCheckSelection = {
             type: 'checkbox',
             selectedRowKeys,
-            onChange:(selectedRowKeys,selectedRows)=>{
+            onChange: (selectedRowKeys, selectedRows) => {
                 this.setState({
                     selectedRowKeys,
                     selectedRows
@@ -197,15 +195,15 @@ export default class BasicTable extends React.Component{
         }
         return (
             <div>
-                <Card title="基础表格">
-                    <Table 
+                <Card title="Basic table">
+                    <Table
                         bordered
                         columns={columns}
                         dataSource={this.state.dataSource}
                         pagination={false}
                     />
                 </Card>
-                <Card title="动态数据渲染表格-Mock" style={{margin:'10px 0'}}>
+                <Card title="Dynamic data -Mock" style={{ margin: '10px 0' }}>
                     <Table
                         bordered
                         columns={columns}
@@ -213,14 +211,14 @@ export default class BasicTable extends React.Component{
                         pagination={false}
                     />
                 </Card>
-                <Card title="Mock-单选" style={{ margin: '10px 0' }}>
+                <Card title="Mock-single selection" style={{ margin: '10px 0' }}>
                     <Table
                         bordered
                         rowSelection={rowSelection}
-                        onRow={(record,index) => {
+                        onRow={(record, index) => {
                             return {
-                                onClick:()=>{
-                                    this.onRowClick(record,index);
+                                onClick: () => {
+                                    this.onRowClick(record, index);
                                 }
                             };
                         }}
@@ -229,9 +227,9 @@ export default class BasicTable extends React.Component{
                         pagination={false}
                     />
                 </Card>
-                <Card title="Mock-单选" style={{ margin: '10px 0' }}>
-                    <div style={{marginBottom:10}}>
-                        <Button onClick={this.handleDelete}>删除</Button>
+                <Card title="Mock-single selection" style={{ margin: '10px 0' }}>
+                    <div style={{ marginBottom: 10 }}>
+                        <Button onClick={this.handleDelete}>Delete</Button>
                     </div>
                     <Table
                         bordered
@@ -241,7 +239,7 @@ export default class BasicTable extends React.Component{
                         pagination={false}
                     />
                 </Card>
-                <Card title="Mock-表格分页" style={{ margin: '10px 0' }}>
+                <Card title="Mock-Pagination" style={{ margin: '10px 0' }}>
                     <Table
                         bordered
                         columns={columns}

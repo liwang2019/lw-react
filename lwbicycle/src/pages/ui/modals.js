@@ -10,34 +10,34 @@ export default class Buttons extends React.Component {
         showModal4: false
     }
 
-    handleOpen = (type)=>{
+    handleOpen = (type) => {
         this.setState({
-            [type]:true
+            [type]: true
         })
     }
 
-    handleConfirm = (type)=>{
+    handleConfirm = (type) => {
         Modal[type]({
-            title:'确认？',
-            content:'你确定你学会了React了吗？',
-            onOk(){
+            title: 'Confirmed?',
+            content: 'Are you sure that you finished learning React?',
+            onOk() {
                 console.log('Ok')
             },
-            onCancel(){
+            onCancel() {
                 console.log('Cancel')
             }
         })
     }
-    render(){
+    render() {
         return (
             <div>
-                <Card title="基础模态框" className="card-wrap">
-                    <Button type="primary" onClick={() =>this.handleOpen('showModal1')}>Open</Button>
-                    <Button type="primary" onClick={() =>this.handleOpen('showModal2')}>自定义页脚</Button>
-                    <Button type="primary" onClick={() =>this.handleOpen('showModal3')}>顶部20px弹框</Button>
-                    <Button type="primary" onClick={() =>this.handleOpen('showModal4')}>水平垂直居中</Button>
+                <Card title="Basic modal" className="card-wrap">
+                    <Button type="primary" onClick={() => this.handleOpen('showModal1')}>Open</Button>
+                    <Button type="primary" onClick={() => this.handleOpen('showModal2')}>Custom footer</Button>
+                    <Button type="primary" onClick={() => this.handleOpen('showModal3')}>Top 20px Modal</Button>
+                    <Button type="primary" onClick={() => this.handleOpen('showModal4')}>Horizontal and vertical center</Button>
                 </Card>
-                <Card title="信息确认框" className="card-wrap">
+                <Card title="Confirmation modal" className="card-wrap">
                     <Button type="primary" onClick={() => this.handleConfirm('confirm')}>Confirm</Button>
                     <Button type="primary" onClick={() => this.handleConfirm('info')}>Info</Button>
                     <Button type="primary" onClick={() => this.handleConfirm('success')}>Success</Button>
@@ -46,30 +46,30 @@ export default class Buttons extends React.Component {
                 <Modal
                     title="React"
                     visible={this.state.showModal1}
-                    onCancel={()=>{
+                    onCancel={() => {
                         this.setState({
-                            showModal1:false
+                            showModal1: false
                         })
                     }}
                 >
-                    <p>欢迎学习慕课新推出的React高级课程</p>
+                    <p>Welcome to React advanced course</p>
                 </Modal>
                 <Modal
                     title="React"
                     visible={this.state.showModal2}
-                    okText="好的"
-                    cancelText="算了"
+                    okText="OK"
+                    cancelText="Cancel"
                     onCancel={() => {
                         this.setState({
                             showModal2: false
                         })
                     }}
                 >
-                    <p>欢迎学习慕课新推出的React高级课程</p>
+                    <p>Welcome to React advanced course</p>
                 </Modal>
                 <Modal
                     title="React"
-                    style={{top:20}}
+                    style={{ top: 20 }}
                     visible={this.state.showModal3}
                     onCancel={() => {
                         this.setState({
@@ -77,7 +77,7 @@ export default class Buttons extends React.Component {
                         })
                     }}
                 >
-                    <p>欢迎学习慕课新推出的React高级课程</p>
+                    <p>Welcome to React advanced course</p>
                 </Modal>
                 <Modal
                     title="React"
@@ -89,7 +89,7 @@ export default class Buttons extends React.Component {
                         })
                     }}
                 >
-                    <p>欢迎学习慕课新推出的React高级课程</p>
+                    <p>Welcome to React advanced course</p>
                 </Modal>
             </div>
         );

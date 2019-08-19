@@ -8,16 +8,16 @@ import './index.less'
 const SubMenu = Menu.SubMenu;
 class NavLeft extends React.Component {
     state = {
-        currentKey:''
+        currentKey: ''
     }
-    handleClick = ({ item ,key})=>{
+    handleClick = ({ item, key }) => {
         const { dispatch } = this.props;
         dispatch(switchMenu(item.props.title))
         this.setState({
-            currentKey:key
+            currentKey: key
         })
     }
-    componentWillMount(){
+    componentWillMount() {
         const menuTreeNode = this.renderMenu(MenuConfig);
         let currentKey = window.location.hash.replace(/#|\?.*$/g, '');
         this.setState({
@@ -25,13 +25,12 @@ class NavLeft extends React.Component {
             menuTreeNode
         })
     }
-    // 菜单渲染
-    renderMenu =(data)=>{
-        return data.map((item)=>{
-            if(item.children){
+    renderMenu = (data) => {
+        return data.map((item) => {
+            if (item.children) {
                 return (
                     <SubMenu title={item.title} key={item.key}>
-                        { this.renderMenu(item.children)}
+                        {this.renderMenu(item.children)}
                     </SubMenu>
                 )
             }
@@ -44,7 +43,7 @@ class NavLeft extends React.Component {
         return (
             <div>
                 <div className="logo">
-                    <img src="/assets/logo-ant.svg" alt=""/>
+                    <img src="/assets/logo-ant.svg" alt="" />
                     <h1>Imooc MS</h1>
                 </div>
                 <Menu
@@ -52,7 +51,7 @@ class NavLeft extends React.Component {
                     selectedKeys={this.state.currentKey}
                     theme="dark"
                 >
-                    { this.state.menuTreeNode }
+                    {this.state.menuTreeNode}
                 </Menu>
             </div>
         );

@@ -1,21 +1,21 @@
 import React from 'react'
-import {Card,Form,Button,Input,Checkbox,Radio,Select,Switch,DatePicker,TimePicker,Upload,Icon,message, InputNumber} from 'antd'
+import { Card, Form, Button, Input, Checkbox, Radio, Select, Switch, DatePicker, TimePicker, Upload, Icon, message, InputNumber } from 'antd'
 
 const FormItem = Form.Item;
 const RadioGroup = Radio.Group;
 const Option = Select.Option;
 const TextArea = Input.TextArea;
-class FormRegister extends React.Component{
+class FormRegister extends React.Component {
 
-    state={}
+    state = {}
 
-    handleSubmit = ()=>{
+    handleSubmit = () => {
         let userInfo = this.props.form.getFieldsValue();
         console.log(JSON.stringify(userInfo))
-        message.success(`${userInfo.userName} 恭喜你，您通过本次表单组件学习，当前密码为：${userInfo.userPwd}`)
+        message.success(`${userInfo.userName} Congratulations! Current password is：${userInfo.userPwd}`)
     }
 
-    getBase64 = (img, callback)=>{
+    getBase64 = (img, callback) => {
         const reader = new FileReader();
         reader.addEventListener('load', () => callback(reader.result));
         reader.readAsDataURL(img);
@@ -29,30 +29,30 @@ class FormRegister extends React.Component{
         if (info.file.status === 'done') {
             // Get this url from response in real world.
             this.getBase64(info.file.originFileObj, imageUrl => this.setState({
-                userImg:imageUrl,
+                userImg: imageUrl,
                 loading: false,
             }));
         }
     }
 
-    render(){
+    render() {
         const { getFieldDecorator } = this.props.form;
         const formItemLayout = {
-            labelCol:{
-                xs:24,
-                sm:4
+            labelCol: {
+                xs: 24,
+                sm: 4
             },
-            wrapperCol:{
-                xs:24,
-                sm:12
+            wrapperCol: {
+                xs: 24,
+                sm: 12
             }
         }
         const offsetLayout = {
-            wrapperCol:{
-                xs:24,
-                sm:{
-                    span:12,
-                    offset:4
+            wrapperCol: {
+                xs: 24,
+                sm: {
+                    span: 12,
+                    offset: 4
                 }
             }
         }
@@ -61,97 +61,97 @@ class FormRegister extends React.Component{
         }
         return (
             <div>
-                <Card title="注册表单">
+                <Card title="Registration form">
                     <Form layout="horizontal">
-                        <FormItem label="用户名" {...formItemLayout}>
+                        <FormItem label="User name" {...formItemLayout}>
                             {
                                 getFieldDecorator('userName', {
                                     initialValue: '',
                                     rules: [
                                         {
                                             required: true,
-                                            message: '用户名不能为空'
+                                            message: 'User name cannot be empty'
                                         }
                                     ]
                                 })(
-                                    <Input placeholder="请输入用户名" />
+                                    <Input placeholder="Please enter user name" />
                                 )
                             }
                         </FormItem>
-                        <FormItem label="密码" {...formItemLayout}>
+                        <FormItem label="Password" {...formItemLayout}>
                             {
                                 getFieldDecorator('userPwd', {
                                     initialValue: ''
                                 })(
-                                    <Input type="password" placeholder="请输入密码" />
+                                    <Input type="password" placeholder="Please enter password" />
                                 )
                             }
                         </FormItem>
-                        <FormItem label="性别" {...formItemLayout}>
+                        <FormItem label="Sex" {...formItemLayout}>
                             {
                                 getFieldDecorator('sex', {
                                     initialValue: '1'
                                 })(
                                     <RadioGroup>
-                                        <Radio value="1">男</Radio>
-                                        <Radio value="2">女</Radio>
+                                        <Radio value="1">Male</Radio>
+                                        <Radio value="2">Female</Radio>
                                     </RadioGroup>
                                 )
                             }
                         </FormItem>
-                        <FormItem label="年龄" {...formItemLayout}>
+                        <FormItem label="Age" {...formItemLayout}>
                             {
                                 getFieldDecorator('age', {
                                     initialValue: 18
                                 })(
-                                    <InputNumber  />
+                                    <InputNumber />
                                 )
                             }
                         </FormItem>
-                        <FormItem label="当前状态" {...formItemLayout}>
+                        <FormItem label="Status" {...formItemLayout}>
                             {
                                 getFieldDecorator('state', {
                                     initialValue: '2'
                                 })(
                                     <Select>
-                                        <Option value="1">咸鱼一条</Option>
-                                        <Option value="2">风华浪子</Option>
-                                        <Option value="3">北大才子一枚</Option>
-                                        <Option value="4">百度FE</Option>
-                                        <Option value="5">创业者</Option>
+                                        <Option value="1">Just graduated</Option>
+                                        <Option value="2">Employed</Option>
+                                        <Option value="3">Master</Option>
+                                        <Option value="4">Frontend Developer</Option>
+                                        <Option value="5">Entrepreneur</Option>
                                     </Select>
                                 )
                             }
                         </FormItem>
-                        <FormItem label="爱好" {...formItemLayout}>
+                        <FormItem label="Hobby" {...formItemLayout}>
                             {
                                 getFieldDecorator('interest', {
-                                    initialValue: ['2','5']
+                                    initialValue: ['2', '5']
                                 })(
                                     <Select mode="multiple">
-                                        <Option value="1">游泳</Option>
-                                        <Option value="2">打篮球</Option>
-                                        <Option value="3">踢足球</Option>
-                                        <Option value="4">跑步</Option>
-                                        <Option value="5">爬山</Option>
-                                        <Option value="6">骑行</Option>
-                                        <Option value="7">桌球</Option>
-                                        <Option value="8">麦霸</Option>
+                                        <Option value="1">Swimming</Option>
+                                        <Option value="2">Basketball</Option>
+                                        <Option value="3">Football</Option>
+                                        <Option value="4">Running</Option>
+                                        <Option value="5">Climbing mountains</Option>
+                                        <Option value="6">Riding</Option>
+                                        <Option value="7">Table tennis</Option>
+                                        <Option value="8">Karaoke</Option>
                                     </Select>
                                 )
                             }
                         </FormItem>
-                        <FormItem label="是否已婚" {...formItemLayout}>
+                        <FormItem label="Married" {...formItemLayout}>
                             {
                                 getFieldDecorator('isMarried', {
-                                    valuePropName:'checked',
+                                    valuePropName: 'checked',
                                     initialValue: true
                                 })(
-                                    <Switch/>
+                                    <Switch />
                                 )
                             }
                         </FormItem>
-                        <FormItem label="生日" {...formItemLayout}>
+                        <FormItem label="Birthday" {...formItemLayout}>
                             {
                                 getFieldDecorator('birthday')(
                                     <DatePicker
@@ -161,10 +161,10 @@ class FormRegister extends React.Component{
                                 )
                             }
                         </FormItem>
-                        <FormItem label="联系地址" {...formItemLayout}>
+                        <FormItem label="Address" {...formItemLayout}>
                             {
-                                getFieldDecorator('address',{
-                                    initialValue:'北京市海淀区奥林匹克公园'
+                                getFieldDecorator('address', {
+                                    initialValue: 'BeiJing HaiDian'
                                 })(
                                     <TextArea
                                         autosize={rowObject}
@@ -172,14 +172,14 @@ class FormRegister extends React.Component{
                                 )
                             }
                         </FormItem>
-                        <FormItem label="早起时间" {...formItemLayout}>
+                        <FormItem label="Time to get up" {...formItemLayout}>
                             {
                                 getFieldDecorator('time')(
-                                    <TimePicker/>
+                                    <TimePicker />
                                 )
                             }
                         </FormItem>
-                        <FormItem label="头像" {...formItemLayout}>
+                        <FormItem label="Photo" {...formItemLayout}>
                             {
                                 getFieldDecorator('userImg')(
                                     <Upload
@@ -188,7 +188,7 @@ class FormRegister extends React.Component{
                                         action="//jsonplaceholder.typicode.com/posts/"
                                         onChange={this.handleChange}
                                     >
-                                    {this.state.userImg?<img src={this.state.userImg}/>:<Icon type="plus"/>}
+                                        {this.state.userImg ? <img src={this.state.userImg} /> : <Icon type="plus" />}
                                     </Upload>
                                 )
                             }
@@ -196,12 +196,12 @@ class FormRegister extends React.Component{
                         <FormItem {...offsetLayout}>
                             {
                                 getFieldDecorator('userImg')(
-                                   <Checkbox>我已阅读过<a href="#">慕课协议</a></Checkbox>
+                                    <Checkbox>I have read<a href="#">the agreement</a></Checkbox>
                                 )
                             }
                         </FormItem>
                         <FormItem {...offsetLayout}>
-                            <Button type="primary" onClick={this.handleSubmit}>注册</Button>
+                            <Button type="primary" onClick={this.handleSubmit}>Register</Button>
                         </FormItem>
                     </Form>
                 </Card>

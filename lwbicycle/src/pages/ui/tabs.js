@@ -5,16 +5,16 @@ const TabPane = Tabs.TabPane;
 export default class Buttons extends React.Component {
 
     newTabIndex = 0;
-    handleCallback = (key)=>{
-        message.info("Hi,您选择了页签："+key)
+    handleCallback = (key) => {
+        message.info("Hi, you choosed tab：" + key)
     }
 
-    componentWillMount(){
+    componentWillMount() {
         const panes = [
             {
-                title:'Tab 1',
+                title: 'Tab 1',
                 content: 'Tab 1',
-                key:'1'
+                key: '1'
             },
             {
                 title: 'Tab 2',
@@ -33,7 +33,7 @@ export default class Buttons extends React.Component {
         })
     }
 
-    onChange = (activeKey)=>{
+    onChange = (activeKey) => {
         this.setState({
             activeKey
         })
@@ -64,33 +64,33 @@ export default class Buttons extends React.Component {
         this.setState({ panes, activeKey });
     }
 
-    render(){
+    render() {
         return (
             <div>
-                <Card title="Tab页签" className="card-wrap">
+                <Card title="Tab" className="card-wrap">
                     <Tabs defaultActiveKey="1" onChange={this.handleCallback}>
-                        <TabPane tab="Tab 1" key="1">欢迎学习React课程</TabPane>
-                        <TabPane tab="Tab 2" key="2" disabled>欢迎学习React课程</TabPane>
-                        <TabPane tab="Tab 3" key="3">React是一个非常受欢迎的MV*框架</TabPane>
+                        <TabPane tab="Tab 1" key="1">Welcome to react course</TabPane>
+                        <TabPane tab="Tab 2" key="2" disabled>Welcome to react course</TabPane>
+                        <TabPane tab="Tab 3" key="3">React is a popupar MV* framework</TabPane>
                     </Tabs>
                 </Card>
-                <Card title="Tab带图的页签" className="card-wrap">
+                <Card title="Tab with photo" className="card-wrap">
                     <Tabs defaultActiveKey="1" onChange={this.handleCallback}>
-                        <TabPane tab={<span><Icon type="plus" />Tab 1</span>} key="1">欢迎学习React课程</TabPane>
-                        <TabPane tab={<span><Icon type="edit" />Tab 2</span>} key="2">欢迎学习React课程</TabPane>
-                        <TabPane tab={<span><Icon type="delete" />Tab 3</span>} key="3">React是一个非常受欢迎的MV*框架</TabPane>
+                        <TabPane tab={<span><Icon type="plus" />Tab 1</span>} key="1">Welcome to react course</TabPane>
+                        <TabPane tab={<span><Icon type="edit" />Tab 2</span>} key="2">Welcome to react course</TabPane>
+                        <TabPane tab={<span><Icon type="delete" />Tab 3</span>} key="3">React is a popupar MV* framework</TabPane>
                     </Tabs>
                 </Card>
-                <Card title="Tab带图的页签" className="card-wrap">
-                    <Tabs 
+                <Card title="Tab with photo" className="card-wrap">
+                    <Tabs
                         onChange={this.onChange}
                         activeKey={this.state.activeKey}
                         type="editable-card"
                         onEdit={this.onEdit}
                     >
                         {
-                            this.state.panes.map((panel)=>{
-                                return <TabPane 
+                            this.state.panes.map((panel) => {
+                                return <TabPane
                                     tab={panel.title}
                                     key={panel.key}
 
