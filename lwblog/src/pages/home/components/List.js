@@ -24,7 +24,7 @@ class List extends PureComponent {
 						);
 					})
 				}
-				<LoadMore onClick={() => getMoreList(page)}>更多文字</LoadMore>
+				<LoadMore onClick={() => getMoreList(page)}>More</LoadMore>
 			</div>
 		)
 	}

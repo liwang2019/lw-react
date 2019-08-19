@@ -13,13 +13,14 @@ we use url(${}) to refer to an image using path
 we use background-size so that the image fits best to the container */
 export const Logo = styled.div`
     position: absolute;
-	top: 0;
-	left: 0;
+	top: 0px;
+	left: 50px;
 	display: block;
 	width: 100px;
 	height: 56px;
 	background: url(${logoPic});
 	background-size: contain;
+	background-repeat:no-repeat;
 `;
 
 /* we use margin: 0 auto to make element be placed center horizontally
@@ -70,7 +71,7 @@ export const SearchWrapper = styled.div`
 `;
 
 export const NavSearch = styled.input.attrs({
-	placeholder: '搜索'
+	placeholder: 'search'
 })`
 	width: 160px;
 	height: 38px;
@@ -91,13 +92,13 @@ export const NavSearch = styled.input.attrs({
 		width: 240px;
 	}
 	&.slide-enter {
-		transition: all 5s ease-out;
+		transition: all .2s ease-out;
 	}
 	&.slide-enter-active {
 		width: 240px;
 	}
 	&.slide-exit {
-		transition: all 5s ease-out;
+		transition: all .2s ease-out;
 	}
 	&.slide-exit-active {
 		width: 160px;

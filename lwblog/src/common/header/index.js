@@ -45,12 +45,12 @@ class Header extends Component {
 					onMouseLeave={handleMouseLeave}
 				>
 					<SearchInfoTitle>
-						热门搜索
+						popular search
 						<SearchInfoSwitch
 							onClick={() => handleChangePage(page, totalPage, this.spinIcon)}
 						>
 							<i ref={(icon) => { this.spinIcon = icon }} className="iconfont spin">&#xe851;</i>
-							换一批
+							switch
 						</SearchInfoSwitch>
 					</SearchInfoTitle>
 					<SearchInfoList>
@@ -77,14 +77,14 @@ class Header extends Component {
 				<Nav>
 					{/**If an element has more than one class, we use space to seperate different classes.
 					If I want to put elements from left to right, I will use float*/}
-					<NavItem className='left active'>首页</NavItem>
-					<NavItem className='left'>下载App</NavItem>
+					<NavItem className='left active'>Home</NavItem>
+					<NavItem className='left'>Download App</NavItem>
 
 					{/* how do we show the login element is dependent on whether we already logged in. login is a boolean property that this component inherits from his parent component*/}
 					{
 						login ?
-							<NavItem onClick={logout} className='right'>退出</NavItem> :
-							<Link to='/login'><NavItem className='right'>登陆</NavItem></Link>
+							<NavItem onClick={logout} className='right'>Logout</NavItem> :
+							<Link to='/login'><NavItem className='right'>Login</NavItem></Link>
 					}
 
 					{/* icon Aa */}
@@ -126,10 +126,10 @@ class Header extends Component {
 					<Link to='/write'>
 						<Button className='writting'>
 							<i className="iconfont">&#xe615;</i>
-							写文章
+							Write an article
 						</Button>
 					</Link>
-					<Button className='reg'>注册</Button>
+					<Button className='reg'>register</Button>
 				</Addition>
 			</HeaderWrapper >
 		);

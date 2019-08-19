@@ -92,15 +92,6 @@ export const RecommendItem = styled.div`
 	background-size: contain;
 `;
 
-export const WriterWrapper = styled.div`
-	width: 278px;
-	border: 1px solid #dcdcdc;
-	border-radius: 3px;
-	height: 300px;
-	line-height: 300px;
-	text-align: center;
-`;
-
 export const LoadMore = styled.div`
 	width: 100%;
 	height: 40px;
