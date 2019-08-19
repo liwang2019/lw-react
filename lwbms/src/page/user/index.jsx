@@ -1,9 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2018-01-26 16:48:16
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-01-31 14:34:10
-*/
 import React        from 'react';
 import { Link }     from 'react-router-dom';
 import MUtil        from 'util/mm.jsx'
@@ -37,7 +31,6 @@ class UserList extends React.Component{
             _mm.errorTips(errMsg);
         });
     }
-    // 页数发生变化的时候
     onPageNumChange(pageNum){
         this.setState({
             pageNum : pageNum
@@ -59,8 +52,8 @@ class UserList extends React.Component{
         });
         return (
             <div id="page-wrapper">
-                <PageTitle title="用户列表"/>
-                <TableList tableHeads={['ID', '用户名', '邮箱', '电话', '注册时间']}>
+                <PageTitle title="User list"/>
+                <TableList tableHeads={['ID', 'User name', 'Email', 'Phone', 'Registration time']}>
                     {listBody}
                 </TableList>
                 <Pagination current={this.state.pageNum} 

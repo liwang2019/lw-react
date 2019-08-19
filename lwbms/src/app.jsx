@@ -1,16 +1,8 @@
-/*
-* @Author: Rosen
-* @Date:   2018-01-13 11:27:21
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-02-05 14:02:20
-*/  
-
 import React            from 'react';
 import ReactDOM         from 'react-dom';
 import { BrowserRouter as Router, Switch, Redirect, Route, Link } from 'react-router-dom'
 
 import Layout           from 'component/layout/index.jsx';
-// 页面
 import Home             from 'page/home/index.jsx';
 import ProductRouter    from 'page/product/router.jsx';
 import Login            from 'page/login/index.jsx';

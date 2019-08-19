@@ -1,14 +1,7 @@
-/*
-* @Author: Rosen
-* @Date:   2018-02-02 17:13:05
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-02-02 21:46:07
-*/
 import React        from 'react';
 import Simditor     from 'simditor';
 import 'simditor/styles/simditor.scss';
 import './index.scss';
-// 通用的富文本编辑器，依赖jquery
 class RichEditor extends React.Component{
     constructor(props){
         super(props);
@@ -25,7 +18,7 @@ class RichEditor extends React.Component{
         let element = this.refs['textarea'];
         this.simditor = new Simditor({
             textarea: $(element),
-            defaultValue: this.props.placeholder || '请输入内容',
+            defaultValue: this.props.placeholder || 'Please enter the content',
             upload: {
                 url             : '/manage/product/richtext_img_upload.do',
                 defaultImage    : '',
@@ -34,7 +27,6 @@ class RichEditor extends React.Component{
         });
         this.bindEditorEvent();
     }
-    // 初始化富文本编辑器的事件
     bindEditorEvent(){
         this.simditor.on('valuechanged', e => {
             this.props.onValueChange(this.simditor.getValue());

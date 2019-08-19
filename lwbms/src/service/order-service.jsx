@@ -1,15 +1,8 @@
-/*
-* @Author: Rosen
-* @Date:   2018-02-05 13:17:10
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-02-05 15:49:32
-*/
 import MUtil    from 'util/mm.jsx'
 
 const _mm       = new MUtil();
 
 class Order{
-    // 获取订单列表
     getOrderList(listParam){
         let url     = '',
             data    = {};
@@ -27,7 +20,6 @@ class Order{
             data    : data
         });
     }
-    // 获取订单详情
     getOrderDetail(orderNumber){
         return _mm.request({
             type    : 'post',

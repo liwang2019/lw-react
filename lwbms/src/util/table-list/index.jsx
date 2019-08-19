@@ -1,12 +1,5 @@
-/*
-* @Author: Rosen
-* @Date:   2018-01-31 13:25:05
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-01-31 20:52:46
-*/
 import React            from 'react';
 
-// 通用的列表
 class TableList extends React.Component{
     constructor(props){
         super(props);
@@ -15,13 +8,11 @@ class TableList extends React.Component{
         }
     }
     componentWillReceiveProps(){
-        // 列表只有在第一次挂载的时候，isFirstLoading为true，其他情况为false
         this.setState({
             isFirstLoading : false
         });
     }
     render(){
-        // 表头信息
         let tableHeader = this.props.tableHeads.map(
             (tableHead, index) => {
                 if(typeof tableHead === 'object'){
@@ -31,13 +22,11 @@ class TableList extends React.Component{
                 }
             }
         );
-        // 列表内容
         let listBody = this.props.children;
-        // 列表的信息
         let listInfo = (
             <tr>
                 <td colSpan={this.props.tableHeads.length} className="text-center">
-                    {this.state.isFirstLoading ? '正在加载数据...' : '没有找到相应的结果~'}</td>
+                    {this.state.isFirstLoading ? 'Loading...' : 'Did not find the result'}</td>
             </tr>
         );
         let tableBody = listBody.length > 0 ? listBody : listInfo;

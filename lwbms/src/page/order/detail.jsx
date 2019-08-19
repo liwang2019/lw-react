@@ -1,9 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2018-02-05 13:40:42
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-02-05 15:52:07
-*/
 import React        from 'react';
 import MUtil        from 'util/mm.jsx'
 import Order        from 'service/order-service.jsx'
@@ -25,7 +19,6 @@ class OrderDetail extends React.Component{
     componentDidMount(){
         this.loadOrderDetail();
     }
-    // 加载商品详情
     loadOrderDetail(){
         _order.getOrderDetail(this.state.orderNumber).then((res) => {
             this.setState({
@@ -35,11 +28,10 @@ class OrderDetail extends React.Component{
             _mm.errorTips(errMsg);
         });
     }
-    // 发货操作
     onSendGoods(){
-        if(window.confirm('是否确认该订单已经发货？')){
+        if(window.confirm('Confirm delivery?')){
             _order.sendGoods(this.state.orderNumber).then((res) => {
-                _mm.successTips('发货成功');
+                _mm.successTips('Delivery succeed');
                 this.loadOrderDetail();
             }, (errMsg) => {
                 _mm.errorTips(errMsg);
@@ -50,30 +42,30 @@ class OrderDetail extends React.Component{
         let receiverInfo = this.state.orderInfo.shippingVo      || {},
             productList  = this.state.orderInfo.orderItemVoList || [];
         let tableHeads = [
-            {name: '商品图片', width: '10%'},
-            {name: '商品信息', width: '45%'},
-            {name: '单价', width: '15%'},
-            {name: '数量', width: '15%'},
-            {name: '合计', width: '15%'}
+            {name: 'Product photo', width: '10%'},
+            {name: 'Product info', width: '45%'},
+            {name: 'Price', width: '15%'},
+            {name: 'Quantity', width: '15%'},
+            {name: 'Total', width: '15%'}
         ];
         return (
             <div id="page-wrapper">
-                <PageTitle title="订单详情" />
+                <PageTitle title="Order detail" />
                 <div className="form-horizontal">
                     <div className="form-group">
-                        <label className="col-md-2 control-label">订单号</label>
+                        <label className="col-md-2 control-label">Order number</label>
                         <div className="col-md-5">
                             <p className="form-control-static">{this.state.orderInfo.orderNo}</p>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">创建时间</label>
+                        <label className="col-md-2 control-label">Creation time</label>
                         <div className="col-md-5">
                             <p className="form-control-static">{this.state.orderInfo.createTime}</p>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">收件人</label>
+                        <label className="col-md-2 control-label">Recipient</label>
                         <div className="col-md-5">
                             <p className="form-control-static">
                                 {receiverInfo.receiverName}，
@@ -85,21 +77,21 @@ class OrderDetail extends React.Component{
                         </div>
                     </div> 
                     <div className="form-group">
-                        <label className="col-md-2 control-label">订单状态</label>
+                        <label className="col-md-2 control-label">Order status</label>
                         <div className="col-md-5">
                             <p className="form-control-static">
                                 {this.state.orderInfo.statusDesc}
                                 {
                                     this.state.orderInfo.status === 20
                                     ? <button className="btn btn-default btn-sm btn-send-goods"
-                                        onClick={(e) => {this.onSendGoods(e)}}>立即发货</button>
+                                        onClick={(e) => {this.onSendGoods(e)}}>Deliver now</button>
                                     : null
                                 }
                             </p>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">支付方式</label>
+                        <label className="col-md-2 control-label">Payment</label>
                         <div className="col-md-5">
                             <p className="form-control-static">
                                 {this.state.orderInfo.paymentTypeDesc}
@@ -107,7 +99,7 @@ class OrderDetail extends React.Component{
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">订单金额</label>
+                        <label className="col-md-2 control-label">Order price</label>
                         <div className="col-md-5">
                             <p className="form-control-static">
                                 ￥{this.state.orderInfo.payment}
@@ -115,7 +107,7 @@ class OrderDetail extends React.Component{
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">商品列表</label>
+                        <label className="col-md-2 control-label">Product list</label>
                         <div className="col-md-10">
                             <TableList tableHeads={tableHeads}>
                                 {

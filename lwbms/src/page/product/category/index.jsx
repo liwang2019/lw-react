@@ -1,9 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2018-02-04 21:34:16
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-02-04 22:49:58
-*/
 import React        from 'react';
 import { Link }     from 'react-router-dom';
 import MUtil        from 'util/mm.jsx'
@@ -38,7 +32,6 @@ class CategoryList extends React.Component{
             });
         }
     }
-    // 加载品类列表
     loadCategoryList(){
         _product.getCategoryList(this.state.parentCategoryId).then(res => {
             this.setState({
@@ -51,9 +44,8 @@ class CategoryList extends React.Component{
             _mm.errorTips(errMsg);
         });
     }
-    // 更新品类的名字
     onUpdateName(categoryId, categoryName){
-        let newName = window.prompt('请输入新的品类名称', categoryName);
+        let newName = window.prompt('Please enter the new category name', categoryName);
         if(newName){
             _product.updateCategoryName({
                 categoryId: categoryId,
@@ -74,10 +66,10 @@ class CategoryList extends React.Component{
                     <td>{category.name}</td>
                     <td>
                         <a className="opear"
-                            onClick={(e) => this.onUpdateName(category.id, category.name)}>修改名称</a>
+                            onClick={(e) => this.onUpdateName(category.id, category.name)}>Edit name</a>
                         {
                             category.parentId === 0
-                            ? <Link to={`/product-category/index/${category.id}`}>查看子品类</Link>
+                            ? <Link to={`/product-category/index/${category.id}`}>View child category</Link>
                             : null
                         }
                     </td> 
@@ -86,20 +78,20 @@ class CategoryList extends React.Component{
         });
         return (
             <div id="page-wrapper">
-                <PageTitle title="品类列表">
+                <PageTitle title="Category list">
                     <div className="page-header-right">
                         <Link to="/product-category/add" className="btn btn-primary">
                             <i className="fa fa-plus"></i>
-                            <span>添加品类</span>
+                            <span>Create category</span>
                         </Link>
                     </div>
                 </PageTitle>
                 <div className="row">
                     <div className="col-md-12">
-                        <p>父品类ID: {this.state.parentCategoryId}</p>
+                        <p>Parent category ID: {this.state.parentCategoryId}</p>
                     </div>
                 </div>
-                <TableList tableHeads={['品类ID', '品类名称', '操作']}>
+                <TableList tableHeads={['Category ID', 'Category name', 'Operation']}>
                     {listBody}
                 </TableList>
             </div>

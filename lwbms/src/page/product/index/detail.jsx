@@ -1,10 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2018-02-02 21:57:52
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-02-02 22:11:37
-*/
-
 import React                from 'react';
 import MUtil                from 'util/mm.jsx'
 import Product              from 'service/product-service.jsx'
@@ -29,15 +22,13 @@ class ProductDetail extends React.Component{
             price               : '',
             stock               : '',
             detail              : '',
-            status              : 1 //商品状态1为在售
+            status              : 1
         }
     }
     componentDidMount(){
         this.loadProduct();
     }
-    // 加载商品详情
     loadProduct(){
-        // 有id的时候，表示是编辑功能，需要表单回填
         if(this.state.id){
             _product.getProduct(this.state.id).then((res) => {
                 let images = res.subImages.split(',');
@@ -56,50 +47,50 @@ class ProductDetail extends React.Component{
     render(){
         return (
             <div id="page-wrapper">
-                <PageTitle title="添加商品" />
+                <PageTitle title="Add product" />
                 <div className="form-horizontal">
                     <div className="form-group">
-                        <label className="col-md-2 control-label">商品名称</label>
+                        <label className="col-md-2 control-label">Product name</label>
                         <div className="col-md-5">
                             <p className="form-control-static">{this.state.name}</p>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">商品描述</label>
+                        <label className="col-md-2 control-label">Product description</label>
                         <div className="col-md-5">
                             <p className="form-control-static">{this.state.subtitle}</p>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">所属分类</label>
+                        <label className="col-md-2 control-label">Parent category</label>
                         <CategorySelector 
                             readOnly
                             categoryId={this.state.categoryId}
                             parentCategoryId={this.state.parentCategoryId}/>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">商品价格</label>
+                        <label className="col-md-2 control-label">Product price</label>
                         <div className="col-md-3">
                             <div className="input-group">
                                 <input type="number" className="form-control" 
                                     value={this.state.price} readOnly/>
-                                <span className="input-group-addon">元</span>
+                                <span className="input-group-addon">Yuan</span>
                             </div>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">商品库存</label>
+                        <label className="col-md-2 control-label">Product stock</label>
                         <div className="col-md-3">
                             <div className="input-group">
                                 <input type="number" className="form-control"
                                     value={this.state.stock} readOnly/>
-                                <span className="input-group-addon">件</span>
+                                <span className="input-group-addon"></span>
                             </div>
                             
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">商品图片</label>
+                        <label className="col-md-2 control-label">Product photo</label>
                         <div className="col-md-10">
                             {
                                 this.state.subImages.length ? this.state.subImages.map(
@@ -107,12 +98,12 @@ class ProductDetail extends React.Component{
                                     <div className="img-con" key={index}>
                                         <img className="img" src={image.url} />
                                     </div>)
-                                ) : (<div>暂无图片</div>)
+                                ) : (<div>No photo</div>)
                             }
                         </div>
                     </div>
                     <div className="form-group">
-                        <label className="col-md-2 control-label">商品详情</label>
+                        <label className="col-md-2 control-label">Product detail</label>
                         <div className="col-md-10" dangerouslySetInnerHTML={{__html: this.state.detail}}></div>
                     </div>
                 </div>

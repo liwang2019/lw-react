@@ -1,9 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2018-01-31 13:10:47
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-02-01 16:30:04
-*/
 import React        from 'react';
 import { Link }     from 'react-router-dom';
 import MUtil        from 'util/mm.jsx'
@@ -31,17 +25,14 @@ class ProductList extends React.Component{
     componentDidMount(){
         this.loadProductList();
     }
-    // 加载商品列表
     loadProductList(){
         let listParam = {};
         listParam.listType = this.state.listType;
         listParam.pageNum  = this.state.pageNum;
-        // 如果是搜索的话，需要传入搜索类型和搜索关键字
         if(this.state.listType === 'search'){
             listParam.searchType = this.state.searchType;
             listParam.keyword    = this.state.searchKeyword;
         }
-        // 请求接口
         _product.getProductList(listParam).then(res => {
             this.setState(res);
         }, errMsg => {
@@ -51,7 +42,6 @@ class ProductList extends React.Component{
             _mm.errorTips(errMsg);
         });
     }
-    // 搜索
     onSearch(searchType, searchKeyword){
         let listType = searchKeyword === '' ? 'list' : 'search';
         this.setState({
@@ -63,7 +53,6 @@ class ProductList extends React.Component{
             this.loadProductList();
         });
     }
-    // 页数发生变化的时候
     onPageNumChange(pageNum){
         this.setState({
             pageNum : pageNum
@@ -71,11 +60,10 @@ class ProductList extends React.Component{
             this.loadProductList();
         });
     }
-    // 改变商品状态，上架 / 下架
     onSetProductStatus(e, productId, currentStatus){
         let newStatus   = currentStatus == 1 ? 2 : 1,
             confrimTips = currentStatus == 1 
-                ? '确定要下架该商品？' : '确定要上架该商品？';
+                ? 'Are you sure to take it off the shelves?' : 'Are you sure to take it on the shelves?';
         if(window.confirm(confrimTips)){
             _product.setProductStatus({
                 productId: productId,
@@ -90,19 +78,19 @@ class ProductList extends React.Component{
     }
     render(){
         let tableHeads = [
-            {name: '商品ID', width: '10%'},
-            {name: '商品信息', width: '50%'},
-            {name: '价格', width: '10%'},
-            {name: '状态', width: '15%'},
-            {name: '操作', width: '15%'},
+            {name: 'Product ID', width: '10%'},
+            {name: 'Product info', width: '50%'},
+            {name: 'Price', width: '10%'},
+            {name: 'Status', width: '15%'},
+            {name: 'Operation', width: '15%'},
         ];
         return (
             <div id="page-wrapper">
-                <PageTitle title="商品列表">
+                <PageTitle title="Product list">
                     <div className="page-header-right">
                         <Link to="/product/save" className="btn btn-primary">
                             <i className="fa fa-plus"></i>
-                            <span>添加商品</span>
+                            <span>Create product</span>
                         </Link>
                     </div>
                 </PageTitle>
@@ -119,13 +107,13 @@ class ProductList extends React.Component{
                                     </td>
                                     <td>￥{product.price}</td>
                                     <td>
-                                        <p>{product.status == 1 ? '在售' : '已下架'}</p>
+                                        <p>{product.status == 1 ? 'On offer' : 'Not on offer'}</p>
                                         <button className="btn btn-xs btn-warning" 
-                                            onClick={(e) => {this.onSetProductStatus(e, product.id, product.status)}}>{product.status == 1 ? '下架' : '上架'}</button>
+                                            onClick={(e) => {this.onSetProductStatus(e, product.id, product.status)}}>{product.status == 1 ? 'On shelve' : 'Off schelve'}</button>
                                     </td>
                                     <td>
-                                        <Link className="opear" to={ `/product/detail/${product.id}` }>详情</Link>
-                                        <Link className="opear" to={ `/product/save/${product.id}` }>编辑</Link>
+                                        <Link className="opear" to={ `/product/detail/${product.id}` }>Detail</Link>
+                                        <Link className="opear" to={ `/product/save/${product.id}` }>Edit</Link>
                                     </td>
                                 </tr>
                             );

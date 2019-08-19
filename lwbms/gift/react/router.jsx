@@ -1,24 +1,12 @@
-/*
-* @Author: Rosen
-* @Date:   2018-01-19 23:22:32
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-01-20 00:11:34
-*/
-
-// 页面路由
 window.location.href = 'http://www.baidu.com';
 history.back();
 
-// hash 路由
 window.location = '#hash';
 window.onhashchange = function(){
     console.log('current hash:', window.location.hash);
 }
 
-// h5 路由
-// 推进一个状态
 history.pushState('name', 'title', '/path');
-// 替换一个状态
 history.replaceState('name', 'title', '/path');
 // popstate
 window.onpopstate = function(){
@@ -46,13 +34,13 @@ class A extends React.Component{
             
             <Switch>
                 <Route exact path={`${this.props.match.path}`} render={(route) => {
-                    return <div>当前组件是不带参数的A</div>
+                    return <div>Current component is component A without parameter</div>
                 }}/>
                 <Route path={`${this.props.match.path}/sub`} render={(route) => {
-                    return <div>当前组件是Sub</div>
+                    return <div>Current component is Sub</div>
                 }}/>
                 <Route path={`${this.props.match.path}/:id`} render={(route) => {
-                    return <div>当前组件是带参数的A, 参数是：{route.match.params.id}</div>
+                    return <div>Current component is component A with parameter, parameter is：{route.match.params.id}</div>
                 }}/>
             </Switch>
             </div>
@@ -76,11 +64,11 @@ class Wrapper extends React.Component{
     render(){
         return (
             <div>
-                <Link to="/a">组件A</Link>
+                <Link to="/a">Component A</Link>
                 <br/>
-                <Link to="/a/123">带参数的组件A</Link>
+                <Link to="/a/123">Component A with parameter</Link>
                 <br/>
-                <Link to="/b">组件B</Link>
+                <Link to="/b">Component B</Link>
                 <br/>
                 <Link to="/a/sub">/a/sub</Link>
                 {this.props.children}

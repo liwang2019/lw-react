@@ -1,14 +1,6 @@
-/*
-* @Author: Rosen
-* @Date:   2018-01-19 18:26:06
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-01-19 21:00:10
-*/
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// 基础组件写法
 function Component(){
     return <h1>I am Rosen</h1>
 }
@@ -50,7 +42,6 @@ ReactDOM.render(
 );
 
 
-// 事件处理方式1
 class Component extends React.Component{
     constructor(props){
         super(props);
@@ -70,15 +61,12 @@ class Component extends React.Component{
         <div>
             <h1>I am {this.state.name}</h1>
             <p>I am {this.state.age} years old!</p>
-            <button onClick={this.handleClick}>加一岁</button>
+            <button onClick={this.handleClick}>Add 1</button>
         </div>
         );
     }
 }
 
-
-
-// 事件处理方式2
 class Component extends React.Component{
     constructor(props){
         super(props);
@@ -102,7 +90,7 @@ class Component extends React.Component{
         <div>
             <h1>I am {this.state.name}</h1>
             <p>I am {this.state.age} years old!</p>
-            <button onClick={(e) => {this.handleClick(e)}}>加一岁</button>
+            <button onClick={(e) => {this.handleClick(e)}}>Add 1</button>
             <input type="text" onChange={(e) => {this.onValueChange(e)}}/>
         </div>
         );
@@ -110,8 +98,6 @@ class Component extends React.Component{
 }
 
 
-
-// 组件的组合方式
 class Component extends React.Component{
     constructor(props){
         super(props);
@@ -135,7 +121,7 @@ class Component extends React.Component{
         <div>
             <h1>I am {this.state.name}</h1>
             <p>I am {this.state.age} years old!</p>
-            <button onClick={(e) => {this.handleClick(e)}}>加一岁</button>
+            <button onClick={(e) => {this.handleClick(e)}}>Add 1</button>
             <input type="text" onChange={(e) => {this.onValueChange(e)}}/>
         </div>
         );
@@ -155,13 +141,11 @@ class App extends React.Component{
     render(){
         return (
             <div className="">
-                {/* 容器式组件 */}
                 <Title>
                     <span>App Span</span>
                     <a href="">link</a>
                 </Title>
                 <hr/>
-                {/* 单纯组件 */}
                 <Component/>
             </div>
         );
@@ -169,7 +153,6 @@ class App extends React.Component{
 }
 
 
-// 数据传递和状态提升
 class Child1 extends React.Component{
     constructor(props){
         super(props);
@@ -181,7 +164,7 @@ class Child1 extends React.Component{
         return (
         <div>
             <h1>Child1： {this.props.bgColor}</h1>
-            <button onClick={(e) => {this.handleClick(e)}}>改变child2 颜色</button>
+            <button onClick={(e) => {this.handleClick(e)}}>Change color of child2</button>
         </div>
         );
     }
@@ -193,7 +176,7 @@ class Child2 extends React.Component{
     render(){
         return (
         <div style={{background:this.props.bgColor}}>
-            <h1>Child2背景颜色： {this.props.bgColor}</h1>
+            <h1>Child2 background color： {this.props.bgColor}</h1>
         </div>
         );
     }

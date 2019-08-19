@@ -1,9 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2018-01-23 19:59:56
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-01-26 12:49:37
-*/
 import React        from 'react';
 import { Link }     from 'react-router-dom';
 import MUtil        from 'util/mm.jsx'
@@ -19,7 +13,6 @@ class NavTop extends React.Component{
             username: _mm.getStorage('userInfo').username || ''
         }
     }
-    // 退出登录
     onLogout(){
         _user.logout().then(res => {
             _mm.removeStorage('userInfo');
@@ -41,8 +34,8 @@ class NavTop extends React.Component{
                             <i className="fa fa-user fa-fw"></i>
                             {
                                 this.state.username
-                                ? <span>欢迎，{this.state.username}</span>
-                                : <span>欢迎您</span>
+                                ? <span>Welcome，{this.state.username}</span>
+                                : <span>Welcome</span>
                             }
                             <i className="fa fa-caret-down"></i>
                         </a>
@@ -50,7 +43,7 @@ class NavTop extends React.Component{
                             <li>
                                 <a onClick={() => {this.onLogout()}}>
                                     <i className="fa fa-sign-out fa-fw"></i>
-                                    <span>退出登录</span>
+                                    <span>Logout</span>
                                 </a>
                             </li>
                         </ul>

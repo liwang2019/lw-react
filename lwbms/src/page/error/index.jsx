@@ -1,9 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2018-01-26 13:45:45
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-01-26 13:56:28
-*/
 import React        from 'react';
 import { Link }     from 'react-router-dom';
 
@@ -16,11 +10,11 @@ class Error extends React.Component{
     render(){
         return (
             <div id="page-wrapper">
-                <PageTitle title="出错啦!"/>
+                <PageTitle title="Error occurs!"/>
                 <div className="row">
                     <div className="col-md-12">
-                        <span>找不到该路径，</span>
-                        <Link to="/">点我返回首页</Link>
+                        <span>Cannot find the path,</span>
+                        <Link to="/">click me back to home</Link>
                     </div>
                 </div>
             </div>

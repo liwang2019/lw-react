@@ -1,10 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2018-01-23 18:03:55
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-01-26 13:41:51
-*/
-
 import React        from 'react';
 import { Link }     from 'react-router-dom';
 
@@ -39,14 +32,14 @@ class Home extends React.Component{
     render(){
         return (
             <div id="page-wrapper">
-                <PageTitle title="首页" />
+                <PageTitle title="Home" />
                 <div className="row">
                     <div className="col-md-4">
                         <Link to="/user" className="color-box brown">
                             <p className="count">{this.state.userCount}</p>
                             <p className="desc">
                                 <i className="fa fa-user-o"></i>
-                                <span>用户总数</span>
+                                <span>User count</span>
                             </p>
                         </Link>
                     </div>
@@ -55,7 +48,7 @@ class Home extends React.Component{
                             <p className="count">{this.state.productCount}</p>
                             <p className="desc">
                                 <i className="fa fa-list"></i>
-                                <span>商品总数</span>
+                                <span>Product count</span>
                             </p>
                         </Link>
                     </div>
@@ -64,7 +57,7 @@ class Home extends React.Component{
                             <p className="count">{this.state.orderCount}</p>
                             <p className="desc">
                                 <i className="fa fa-check-square-o"></i>
-                                <span>订单总数</span>
+                                <span>Order count</span>
                             </p>
                         </Link>
                     </div>
