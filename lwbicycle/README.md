@@ -3,26 +3,27 @@ A backend management system for online shop which contains product, category, or
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/feature.png)  Features
 
-- Map
+- Trace of shared maps can be drawn on the map
+
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/map.PNG)
 
-- Ant-design chart demo
+- Echarts demo
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/chart.gif)
 
-- City management module
+- User can view cities in a table and open a city
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/city.gif)
 
-- Ant-design menu demo
+- Ant-design form demo
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/menu.gif)
 
-- Order management module
+- User can view orders in list and detail view. Order can be stopped.
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/order.gif)
 
-- Permission management module
+- User can create a new role, assign permission and user to role.
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/permission.gif)
 
@@ -34,11 +35,11 @@ A backend management system for online shop which contains product, category, or
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/table.gif)
 
--Ant-design UI demo
+-Ant-design basic UI elements demo
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/ui.gif)
 
-- User management module
+- User can create new employee, view employee in detail, view employees in list, delete employee
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/user.gif)
 
