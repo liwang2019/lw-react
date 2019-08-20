@@ -1,5 +1,5 @@
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/introduction.png)  Introduction
-A web site that user can view articles from others and write articles by themselves. It contains home page, detail page, login page.
+Online system which is similar as Yelp. User can view available shops and their products. They can search for good shops, make an order and give feedback as comment.
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/feature.png)  Features
 
