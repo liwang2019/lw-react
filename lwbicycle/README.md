@@ -3,42 +3,42 @@ A backend management system for online shop which contains product, category, or
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/feature.png)  Features
 
-Map
+- Map
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/map.PNG)
 
-Chart
+- Ant-design chart demo
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/chart.gif)
 
-City
+- City management module
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/city.gif)
 
-Menu
+- Ant-design menu demo
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/menu.gif)
 
-Order
+- Order management module
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/order.gif)
 
-Permission
+- Permission management module
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/permission.gif)
 
-Richtext
+- Richtext demo
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/rich.gif)
 
-Table
+- Ant-design table demo
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/table.gif)
 
-UI
+-Ant-design UI demo
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/ui.gif)
 
-User
+- User management module
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/user.gif)
 
