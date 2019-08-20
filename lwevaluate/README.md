@@ -1,3 +1,24 @@
+homeAndDetail
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwevaluate/public/gif/homeAndDetail.gif)
+
+Login
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwevaluate/public/gif/login.gif)
+
+Order
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwevaluate/public/gif/order.gif)
+
+Permission
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwevaluate/public/gif/permission.gif)
+
+Search
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwevaluate/public/gif/search.gif)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
