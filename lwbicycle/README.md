@@ -1,4 +1,38 @@
+Chart
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/chart.gif)
+
+City
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/city.gif)
+
+Menu
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/menu.gif)
+
+Order
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/order.gif)
+
+Permission
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/permission.gif)
+
+Richtext
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/rich.gif)
+
+Table
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/table.gif)
+
+UI
+
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/ui.gif)
+
+User
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/user.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
