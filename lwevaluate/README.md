@@ -19,6 +19,10 @@ Online system which is similar as Yelp. User can view available shops and their 
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwevaluate/public/gif/search.gif)
 
+- User can select a product and make an order. They will find new orders in order page.
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwevaluate/public/gif/make%20order.gif)
+
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/install.png)  Install && Usage
 
