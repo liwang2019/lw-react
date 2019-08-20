@@ -66,7 +66,7 @@ export default class BasicTable extends React.Component {
                 title: 'User name',
                 key: 'userName',
                 width: 80,
-                dataIndex: 'userName'
+                dataIndex: 'username'
             },
             {
                 title: 'Sex',
@@ -144,7 +144,7 @@ export default class BasicTable extends React.Component {
                 key: 'userName',
                 width: 80,
                 fixed: 'left',
-                dataIndex: 'userName'
+                dataIndex: 'username'
             },
             {
                 title: 'Sex',
@@ -301,7 +301,7 @@ export default class BasicTable extends React.Component {
             {
                 title: 'User name',
                 key: 'userName',
-                dataIndex: 'userName'
+                dataIndex: 'username'
             },
             {
                 title: 'Sex',
@@ -376,7 +376,7 @@ export default class BasicTable extends React.Component {
             },
             {
                 title: 'User name',
-                dataIndex: 'userName'
+                dataIndex: 'username'
             },
             {
                 title: 'Sex',

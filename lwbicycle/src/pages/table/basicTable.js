@@ -227,7 +227,7 @@ export default class BasicTable extends React.Component {
                         pagination={false}
                     />
                 </Card>
-                <Card title="Mock-single selection" style={{ margin: '10px 0' }}>
+                <Card title="Mock-multi selection" style={{ margin: '10px 0' }}>
                     <div style={{ marginBottom: 10 }}>
                         <Button onClick={this.handleDelete}>Delete</Button>
                     </div>

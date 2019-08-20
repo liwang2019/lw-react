@@ -40,7 +40,8 @@ export default class PermissionUser extends React.Component {
         let item = this.state.selectedItem;
         if (!item) {
             Modal.info({
-                text: 'Please choose 1 role'
+                title: 'Prompt',
+                content: 'Please choose 1 role'
             })
             return;
         }
@@ -76,7 +77,8 @@ export default class PermissionUser extends React.Component {
         let item = this.state.selectedItem;
         if (!item) {
             Modal.info({
-                text: 'Please choose 1 role'
+                title: 'Prompt',
+                content: 'Please choose 1 role'
             })
             return;
         }
