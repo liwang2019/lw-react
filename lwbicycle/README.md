@@ -1,5 +1,5 @@
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/introduction.png)  Introduction
-A backend management system for online shop which contains product, category, order and user management.
+A backend management system for an online bikes-sharing system which contains user, order, city, user and role management.
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/feature.png)  Features
 
