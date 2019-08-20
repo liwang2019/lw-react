@@ -1,4 +1,4 @@
-### Introduction
+![image](https://github.com/liwang2019/lw-react/blob/master/resource/introduction.png)### Introduction
 A web site that user can view articles from others and write articles by themselves. It contains home page, detail page, login page.
 
 ### Features
