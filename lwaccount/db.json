@@ -235,7 +235,7 @@
     },
     {
       "title": "travel to Indien",
-      "price": 20003,
+      "price": 2003,
       "date": "2019-08-14",
       "monthCategory": "2019-8",
       "timestamp": 1565740800000,
@@ -250,12 +250,66 @@
     },
     {
       "title": "Bank of China",
-      "price": 30000,
+      "price": 3000,
       "date": "2019-08-06",
       "monthCategory": "2019-8",
       "timestamp": 1565049600000,
       "id": "_zoe0p4x82",
-      "cid": "12"
+      "cid": "13",
+      "category": {
+        "name": "Finance plan",
+        "iconName": "logo-yen",
+        "id": "12",
+        "type": "income"
+      }
+    },
+    {
+      "title": "Swimming",
+      "price": 2000,
+      "date": "2019-08-08",
+      "monthCategory": "2019-8",
+      "timestamp": 1565222400000,
+      "id": "_exhmkat24",
+      "cid": "8",
+      "category": {
+        "name": "Health",
+        "iconName": "ios-medkit",
+        "id": "8",
+        "type": "outcome"
+      }
+    },
+    {
+      "title": "shoes",
+      "price": 1600,
+      "date": "2019-08-10",
+      "monthCategory": "2019-8",
+      "timestamp": 1565395200000,
+      "id": "_wdobme385",
+      "cid": "3"
+    },
+    {
+      "title": "Bank of China",
+      "price": 2500,
+      "date": "2019-08-09",
+      "monthCategory": "2019-8",
+      "timestamp": 1565308800000,
+      "id": "_l3hebjhiz",
+      "cid": "12",
+      "category": {
+        "name": "Finance plan",
+        "iconName": "logo-yen",
+        "id": "12",
+        "type": "income"
+      }
+    },
+    {
+      "title": "Sales",
+      "price": 6200,
+      "date": "2019-08-07",
+      "monthCategory": "2019-8",
+      "timestamp": 1565136000000,
+      "id": "_n0u8ml463",
+      "cid": "15"
     }
   ]
 }
