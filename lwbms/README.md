@@ -3,23 +3,23 @@ A backend management system for an online bikes-sharing system which contains us
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/feature.png)  Features
 
-- Category
+- User can view all categories, change category name, view children categories of selected parent category
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/category.gif)
 
-- Login
+- Login and logout
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/login.gif)
 
-- Order
+- User can view all orders in list, search orders by ID, view order detail
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/order.gif)
 
-- Product
+- User can view all products in list, search productss by ID and name, create new product, edit existing product and view product detail.
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/product.gif)
 
-- User
+- All users are shown in list view.
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/user.gif)
 
