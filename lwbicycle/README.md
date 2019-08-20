@@ -1,3 +1,5 @@
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/ui.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
