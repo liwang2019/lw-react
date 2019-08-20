@@ -19,4 +19,4 @@ An accounting system which helps its user to record their incomes and outcomes.
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/stack.png)  Technology Stack
 
-
+- ![image](https://github.com/liwang2019/lw-react/blob/master/resource/react.png) React
