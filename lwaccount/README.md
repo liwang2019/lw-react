@@ -1,3 +1,13 @@
+Create Edit and Delete
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwaccount/public/gif/creatEditDelete.gif)
+
+Overview
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwaccount/public/gif/overview.gif)
+
+
+
 该项目由 [Create React App](https://github.com/facebookincubator/create-react-app) 创建.
 
 ##  React 正确实战的方法 - 项目代码
