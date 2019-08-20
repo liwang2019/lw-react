@@ -42,10 +42,10 @@ A backend management system for online shop which contains product, category, or
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/user.gif)
 
-### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/install.png) Install && Usage
+### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/install.png)  Install && Usage
 
 `npm i`
 
 `npm start`
 
-### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/stack.png) Technology Stack
+### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/stack.png)  Technology Stack
