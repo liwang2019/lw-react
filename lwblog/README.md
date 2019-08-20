@@ -1,4 +1,14 @@
-![image](https://github.com/liwang2019/lw-react/blob/master/lwblog/public/gif/1.gif)
+Login
+
+![image](https://github.com/liwang2019/lw-react/tree/master/lwblog/public/gif)
+
+Load more
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwblog/public/gif/more.gif)
+
+Search
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwblog/public/gif/search.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
