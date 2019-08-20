@@ -1,5 +1,5 @@
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/introduction.png)  Introduction
-An accounting system which helps its user to record their incomes and outcomes.
+A web site that user can view articles from others and write articles by themselves. It contains home page, detail page, login page.
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/feature.png)  Features
 
