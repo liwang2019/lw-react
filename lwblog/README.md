@@ -1,6 +1,6 @@
 Login
 
-![image](https://github.com/liwang2019/lw-react/tree/master/lwblog/public/gif)
+![image](https://github.com/liwang2019/lw-react/tree/master/lwblog/public/login.gif)
 
 Load more
 
