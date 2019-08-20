@@ -1,3 +1,6 @@
+Map
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/map.PNG)
+
 Chart
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/chart.gif)
