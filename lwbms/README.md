@@ -3,7 +3,7 @@ A backend management system for an online bikes-sharing system which contains us
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/feature.png)  Features
 
-- User can view all categories, change category name, view children categories of selected parent category
+- User can view all categories, change category name, create new category, view children categories of selected parent category
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/category.gif)
 
