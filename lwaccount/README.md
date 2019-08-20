@@ -11,12 +11,12 @@ A web site that user can view articles from others and write articles by themsel
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwaccount/public/gif/overview.gif)
 
-### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/install.png) Install && Usage
+### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/install.png)  Install && Usage
 
 `npm i`
 
 `npm start`
 
-### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/stack.png) Technology Stack
+### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/stack.png)  Technology Stack
 
 
