@@ -3,21 +3,21 @@ A backend management system for online shop which contains product, category, or
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/feature.png)  Features
 
-- User can view all categories, change category name, create new category, view children categories of selected parent category
-
-![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/category.gif)
-
 - Login and logout
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/login.gif)
 
-- User can view all orders in list, search orders by ID, view order detail
+- User can view all categories, change category name, create new category, view children categories of selected parent category
 
-![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/order.gif)
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/category.gif)
 
 - User can view all products in list, search productss by ID and name, create new product, edit existing product and view product detail.
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/product.gif)
+
+- User can view all orders in list, search orders by ID, view order detail
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/order.gif)
 
 - All users are shown in list view.
 
