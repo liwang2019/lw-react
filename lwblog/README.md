@@ -7,13 +7,14 @@ A web site that user can view articles from others and write articles by themsel
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwblog/public/gif/login.gif)
 
+- Type keyword to search. Populare keywords can be shown.
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwblog/public/gif/search.gif)
+
 - Click button to load more articles
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwblog/public/gif/more.gif)
 
-- Type keyword to search. Populare keywords can be shown.
-
-![image](https://github.com/liwang2019/lw-react/blob/master/lwblog/public/gif/search.gif)
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/install.png)  Install && Usage
 
