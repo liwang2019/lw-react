@@ -1,5 +1,5 @@
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/introduction.png)  Introduction
-An accounting system which helps its user to record their incomes and outcomes.
+An accounting system which helps its user to record their incomes and outcomes
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/feature.png)  Features
 
