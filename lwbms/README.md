@@ -15,7 +15,7 @@ A backend management system for online shop which contains product, category, or
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/product.gif)
 
-- User can view all orders in list, search orders by ID, view order detail
+- User can view all orders in list, search orders by number, view order detail
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbms/gift/gif/order.gif)
 
