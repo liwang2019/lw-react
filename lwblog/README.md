@@ -26,8 +26,8 @@ A web site that user can view articles from others and write articles by themsel
 - react
 - redux
 - react-redux
-- react-Router
-- redux-Immutable
+- react-router
+- redux-immutable
 - redux-thunk
 - styled-components
 - axios
