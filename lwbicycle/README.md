@@ -15,13 +15,13 @@ A backend management system for an online bikes-sharing system which contains us
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/table.gif)
 
-- Echarts demo
-
-![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/chart.gif)
-
 - Richtext demo
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/rich.gif)
+
+- Echarts demo
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/chart.gif)
 
 - User can view cities in a table and open a city
 
