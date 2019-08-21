@@ -32,8 +32,9 @@ Online system which is similar as Yelp. User can view available shops and their 
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/stack.png)  Technology Stack
 
+- react
+- redux
 - react-redux
 - react-router
 - react-slick
-- redux
 - redux-thunk
