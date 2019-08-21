@@ -19,10 +19,9 @@ A backend management system for an online bikes-sharing system which contains us
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/chart.gif)
 
-- Trace of shared maps can be drawn on the map
+- Richtext demo
 
-![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/map.PNG)
-
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/rich.gif)
 
 - User can view cities in a table and open a city
 
@@ -32,17 +31,17 @@ A backend management system for an online bikes-sharing system which contains us
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/order.gif)
 
+- User can create new employee, view employee in detail, view employees in list, delete employee
+
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/user.gif)
+
 - User can create a new role, assign permission and user to role.
 
 ![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/permission.gif)
 
-- Richtext demo
+- Trace of shared maps can be drawn on the map
 
-![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/rich.gif)
-
-- User can create new employee, view employee in detail, view employees in list, delete employee
-
-![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/user.gif)
+![image](https://github.com/liwang2019/lw-react/blob/master/lwbicycle/public/gif/map.PNG)
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/install.png)  Install && Usage
 
