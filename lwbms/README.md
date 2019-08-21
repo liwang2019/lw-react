@@ -29,7 +29,7 @@ A backend management system for online shop which contains product, category, or
 
 `yarn run dev`
 
-visit http://localhost:8086/
+ visit http://localhost:8086/
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/stack.png)  Technology Stack
 
