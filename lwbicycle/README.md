@@ -50,3 +50,12 @@ A backend management system for an online bikes-sharing system which contains us
 `npm start`
 
 ### ![image](https://github.com/liwang2019/lw-react/blob/master/resource/stack.png)  Technology Stack
+
+- react
+- redux
+- react-redux
+- react-router
+- antd
+- axios
+- echarts
+- less
